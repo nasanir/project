@@ -1,3 +1,5 @@
+package pers.nasanir.fountain.common.crypto.itf;
+
 import java.security.NoSuchAlgorithmException;
 
 public interface IEncoder {

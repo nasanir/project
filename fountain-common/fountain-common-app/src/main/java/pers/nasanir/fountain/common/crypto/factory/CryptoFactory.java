@@ -1,5 +1,8 @@
+package pers.nasanir.fountain.common.crypto.factory;
 
 
+import pers.nasanir.fountain.common.crypto.constant.EncoderEnum;
+import pers.nasanir.fountain.common.crypto.itf.IEncoder;
 
 public class CryptoFactory {
 	private static String packagepath = "pers.nasanir.blog.common.crypto.encoder.";

@@ -1,4 +1,6 @@
+package pers.nasanir.fountain.common.crypto.encoder;
 
+import pers.nasanir.fountain.common.crypto.abst.AbstractEncoder;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

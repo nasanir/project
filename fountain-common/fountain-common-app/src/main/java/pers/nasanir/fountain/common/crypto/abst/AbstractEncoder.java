@@ -1,3 +1,7 @@
+package pers.nasanir.fountain.common.crypto.abst;
+
+import pers.nasanir.fountain.common.crypto.constant.CryptoContant;
+import pers.nasanir.fountain.common.crypto.itf.IEncoder;
 
 import java.security.NoSuchAlgorithmException;
 
