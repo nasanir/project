@@ -3,6 +3,7 @@ package pers.nasanir.fountain.common.db.orm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import pers.nasanir.fountain.common.common.entity.AbstractVO;
+import pers.nasanir.fountain.common.db.impl.CrudDao;
 
 import java.util.HashMap;
 
@@ -15,7 +16,7 @@ import java.util.HashMap;
 @Repository("jdbcBaseDao")
 public class JdbcBaseDao {
 	@Autowired
-	private CrudDaoImpl crudDao;
+	private CrudDao crudDao;
 
 	public AbstractVO query(AbstractVO vo) {
 		// TODO Auto-generated method stub
