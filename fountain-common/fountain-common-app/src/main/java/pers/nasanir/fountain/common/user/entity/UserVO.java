@@ -7,7 +7,7 @@ import pers.nasanir.fountain.common.common.entity.BaseVO;
 import java.util.Date;
 
 
-@PeaceTable(name = "blog_user", isView = true)
+@PeaceTable(name = "blog_user", isView = false)
 public class UserVO extends BaseVO {
 	
 	@PeaceField(isPk=true)
