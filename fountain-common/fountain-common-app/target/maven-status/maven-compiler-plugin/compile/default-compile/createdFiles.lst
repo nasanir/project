@@ -12,6 +12,7 @@ pers\nasanir\fountain\common\user\itf\IUserService.class
 pers\nasanir\fountain\common\db\provider\BaseProvider.class
 pers\nasanir\fountain\common\crypto\factory\CryptoFactory.class
 pers\nasanir\fountain\common\crypto\constant\CryptoContant.class
+pers\nasanir\fountain\common\function\ctrl\FunctionController.class
 pers\nasanir\fountain\common\common\constant\CommonConstant.class
 pers\nasanir\fountain\common\db\impl\IJdbcBaseService.class
 pers\nasanir\fountain\common\crypto\encoder\Hex256Encoder.class
