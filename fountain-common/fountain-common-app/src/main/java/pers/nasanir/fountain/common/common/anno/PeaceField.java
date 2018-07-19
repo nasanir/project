@@ -11,4 +11,8 @@ import java.lang.annotation.Target;
 @Documented
 public @interface PeaceField {
 	boolean isPk() default false;
+
+	int lenght() default 50;
+
+	boolean isVaild() default true;
 }

@@ -1,4 +1,3 @@
-pers\nasanir\fountain\common\db\constant\DbConstant.class
 pers\nasanir\fountain\common\db\impl\CrudDao.class
 pers\nasanir\fountain\common\exception\BaseRunTimeException.class
 pers\nasanir\fountain\common\common\entity\BaseVO.class
@@ -12,6 +11,7 @@ pers\nasanir\fountain\common\function\service\FuncServiceImpl.class
 pers\nasanir\fountain\common\user\itf\IUserService.class
 pers\nasanir\fountain\common\db\provider\BaseProvider.class
 pers\nasanir\fountain\common\dbmanger\itf\DbMangerService.class
+pers\nasanir\fountain\common\sql\constant\DbConstant.class
 pers\nasanir\fountain\common\crypto\factory\CryptoFactory.class
 pers\nasanir\fountain\common\crypto\constant\CryptoContant.class
 pers\nasanir\fountain\common\function\ctrl\FunctionController.class
@@ -39,6 +39,7 @@ pers\nasanir\fountain\common\reflect\ClassInfo.class
 pers\nasanir\fountain\common\reflect\ClassUtils.class
 pers\nasanir\fountain\common\db\service\JdbcBaseServiceImpl.class
 pers\nasanir\fountain\common\BlogApplicationMain.class
+pers\nasanir\fountain\common\db\util\TableVoUtils.class
 pers\nasanir\fountain\common\sql\constant\SqlEnum.class
 pers\nasanir\fountain\common\reflect\Invoker.class
 pers\nasanir\fountain\common\sql\service\MysqlSqlBuilder.class

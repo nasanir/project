@@ -4,6 +4,7 @@ import pers.nasanir.fountain.common.common.constant.CommonConstant;
 import pers.nasanir.fountain.common.exception.ReflectRuntimeException;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Locale;
@@ -14,7 +15,7 @@ public class ClassInfo {
 	private Class<?> clz;
 	private HashMap<String, Invoker> InvokerMap = new HashMap<String, Invoker>();
 	private HashMap<String, Object> AnnotationMap = new HashMap<String, Object>();
-	
+	private HashMap<String, Field> FieldMap = new HashMap<String, Field>();
 
 	ClassInfo(Class<?> clz) {
 		this.clz = clz;
@@ -24,6 +25,7 @@ public class ClassInfo {
 	private void init() {
 		addMethods(clz);
 		addAnnotation(clz);
+		addField(clz);
 	}
 
 	public static ClassInfo forClass(Class<?> clz) {
@@ -48,12 +50,26 @@ public class ClassInfo {
 		}
 	}
 
+	private  void addField(Class<?> clz){
+		Field[] fieldArr= clz.getDeclaredFields();
+		for(Field field:fieldArr){
+			FieldMap.put(field.getName(),field);
+		}
+	}
+
 	private void addAnnotation(Class<?> clz) {
 		Annotation[] annoArr = clz.getAnnotations();
 		for (Annotation anno : annoArr) {
 			String name = anno.annotationType().getName();
 			AnnotationMap.put(name, anno);
 		}
+	}
+
+	public <A extends Annotation> Object getAnnotation(Class<A> clz) {
+		if (AnnotationMap.containsKey(clz.getName())) {
+			return AnnotationMap.get(clz.getName());
+		}
+		return null;
 	}
 
 	public Class<?> getClz() {
@@ -68,11 +84,8 @@ public class ClassInfo {
 		return AnnotationMap;
 	}
 
-	public <A extends Annotation> Object getAnnotation(Class<A> clz) {
-		if (AnnotationMap.containsKey(clz.getName())) {
-			return AnnotationMap.get(clz.getName());
-		}
-		return null;
+	public HashMap<String, Field> getFieldMap() {
+		return FieldMap;
 	}
 
 }
