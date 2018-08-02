@@ -1,4 +1,4 @@
-package pers.nasanir.fountain.common.dbmanger.itf;
+package pers.nasanir.foutain.manager.dbmanger.itf;
 
 import java.io.IOException;
 import java.util.List;

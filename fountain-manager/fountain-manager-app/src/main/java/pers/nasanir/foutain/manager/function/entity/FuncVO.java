@@ -1,4 +1,4 @@
-package pers.nasanir.fountain.common.function.entity;
+package pers.nasanir.foutain.manager.function.entity;
 
 import pers.nasanir.fountain.common.common.anno.PeaceTable;
 import pers.nasanir.fountain.common.common.entity.BaseVO;

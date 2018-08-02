@@ -1,14 +1,13 @@
-package pers.nasanir.fountain.common.function.service;
+package pers.nasanir.foutain.manager.function.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pers.nasanir.fountain.common.common.entity.AbstractVO;
-import pers.nasanir.fountain.common.common.entity.BaseVO;
 import pers.nasanir.fountain.common.common.entity.DataVO;
 import pers.nasanir.fountain.common.common.entity.VOSet;
 import pers.nasanir.fountain.common.db.impl.IJdbcBaseService;
-import pers.nasanir.fountain.common.function.entity.FuncVO;
-import pers.nasanir.fountain.common.function.itf.IFuncService;
+import pers.nasanir.foutain.manager.function.entity.FuncVO;
+import pers.nasanir.foutain.manager.function.itf.IFuncService;
 
 import java.util.ArrayList;
 import java.util.List;

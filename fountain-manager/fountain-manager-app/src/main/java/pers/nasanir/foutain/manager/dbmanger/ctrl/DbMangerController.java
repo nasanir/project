@@ -1,11 +1,10 @@
-package pers.nasanir.fountain.common.dbmanger.ctrl;
+package pers.nasanir.foutain.manager.dbmanger.ctrl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import pers.nasanir.fountain.common.dbmanger.itf.DbMangerService;
+import pers.nasanir.foutain.manager.dbmanger.itf.DbMangerService;
 
 import java.io.IOException;
 import java.util.List;
