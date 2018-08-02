@@ -1,7 +1,8 @@
 package pers.nasanir.fountain.common.dbmanger.itf;
 
 import java.io.IOException;
+import java.util.List;
 
 public interface DbMangerService {
-    public String createsql() throws IOException;
+    public List<String> createsql() throws IOException;
 }

@@ -13,13 +13,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Enumeration;
 import java.util.HashMap;
+import java.util.List;
 
 @Service("dbMangerService")
 public class DbMangerServiceImpl implements DbMangerService {
 
     @Override
-    public String createsql() throws IOException {
-        SqlFactroy.createSqlBuilder().getCreateSql(TableVoUtils.getTableVoClass());
-        return null;
+    public List<String> createsql() throws IOException {
+        return SqlFactroy.createSqlBuilder().getCreateSql(TableVoUtils.getTableVoClass());
     }
 }

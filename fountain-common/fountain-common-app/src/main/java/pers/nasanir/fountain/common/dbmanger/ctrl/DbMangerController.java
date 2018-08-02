@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import pers.nasanir.fountain.common.dbmanger.itf.DbMangerService;
 
 import java.io.IOException;
+import java.util.List;
 
 @RestController
 public class DbMangerController {
@@ -15,8 +16,7 @@ public class DbMangerController {
     DbMangerService dbMangerService;
 
     @RequestMapping(value = "/common/dbmanger/createsql",method = RequestMethod.GET)
-    public String createSql() throws IOException {
-        dbMangerService.createsql();
-        return "";
+    public List<String> createSql() throws IOException {
+        return dbMangerService.createsql();
     }
 }

@@ -12,7 +12,9 @@ import java.lang.annotation.Target;
 public @interface PeaceField {
 	boolean isPk() default false;
 
-	int lenght() default 50;
+	String lenght() default "50";
 
 	boolean isVaild() default true;
+
+	String type() default "VARCHAR";
 }
