@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.nasanir.fountain.hr.structure.entity.StructureVOMapper">
+  <resultMap id="BaseResultMap" type="pers.nasanir.fountain.hr.structure.entity.StructureVO">
+    <id column="STRUCTURE_ID" jdbcType="BIGINT" property="structureId" />
+    <result column="STRUCTURE_CODE" jdbcType="VARCHAR" property="structureCode" />
+    <result column="STRUCTURE_NAME" jdbcType="VARCHAR" property="structureName" />
+    <result column="PARENT_CODE" jdbcType="VARCHAR" property="parentCode" />
+    <result column="STRUCTURE_ORDER" jdbcType="INTEGER" property="structureOrder" />
+    <result column="STRUCTURE_LAYER" jdbcType="INTEGER" property="structureLayer" />
+    <result column="ISVAILD" jdbcType="BIT" property="isvaild" />
+    <result column="DESCRIPTION" jdbcType="VARCHAR" property="description" />
+    <result column="CREATED_DT" jdbcType="TIMESTAMP" property="createdDt" />
+    <result column="CREATED_BY" jdbcType="VARCHAR" property="createdBy" />
+    <result column="CHANGE_DT" jdbcType="TIMESTAMP" property="changeDt" />
+    <result column="CHANGE_BY" jdbcType="VARCHAR" property="changeBy" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    STRUCTURE_ID, STRUCTURE_CODE, STRUCTURE_NAME, PARENT_CODE, STRUCTURE_ORDER, STRUCTURE_LAYER, 
+    ISVAILD, DESCRIPTION, CREATED_DT, CREATED_BY, CHANGE_DT, CHANGE_BY
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from fountain_hr_structure
+    where STRUCTURE_ID = #{structureId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from fountain_hr_structure
+    where STRUCTURE_ID = #{structureId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="pers.nasanir.fountain.hr.structure.entity.StructureVO">
+    insert into fountain_hr_structure (STRUCTURE_ID, STRUCTURE_CODE, STRUCTURE_NAME, 
+      PARENT_CODE, STRUCTURE_ORDER, STRUCTURE_LAYER, 
+      ISVAILD, DESCRIPTION, CREATED_DT, 
+      CREATED_BY, CHANGE_DT, CHANGE_BY
+      )
+    values (#{structureId,jdbcType=BIGINT}, #{structureCode,jdbcType=VARCHAR}, #{structureName,jdbcType=VARCHAR}, 
+      #{parentCode,jdbcType=VARCHAR}, #{structureOrder,jdbcType=INTEGER}, #{structureLayer,jdbcType=INTEGER}, 
+      #{isvaild,jdbcType=BIT}, #{description,jdbcType=VARCHAR}, #{createdDt,jdbcType=TIMESTAMP}, 
+      #{createdBy,jdbcType=VARCHAR}, #{changeDt,jdbcType=TIMESTAMP}, #{changeBy,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="pers.nasanir.fountain.hr.structure.entity.StructureVO">
+    insert into fountain_hr_structure
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="structureId != null">
+        STRUCTURE_ID,
+      </if>
+      <if test="structureCode != null">
+        STRUCTURE_CODE,
+      </if>
+      <if test="structureName != null">
+        STRUCTURE_NAME,
+      </if>
+      <if test="parentCode != null">
+        PARENT_CODE,
+      </if>
+      <if test="structureOrder != null">
+        STRUCTURE_ORDER,
+      </if>
+      <if test="structureLayer != null">
+        STRUCTURE_LAYER,
+      </if>
+      <if test="isvaild != null">
+        ISVAILD,
+      </if>
+      <if test="description != null">
+        DESCRIPTION,
+      </if>
+      <if test="createdDt != null">
+        CREATED_DT,
+      </if>
+      <if test="createdBy != null">
+        CREATED_BY,
+      </if>
+      <if test="changeDt != null">
+        CHANGE_DT,
+      </if>
+      <if test="changeBy != null">
+        CHANGE_BY,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="structureId != null">
+        #{structureId,jdbcType=BIGINT},
+      </if>
+      <if test="structureCode != null">
+        #{structureCode,jdbcType=VARCHAR},
+      </if>
+      <if test="structureName != null">
+        #{structureName,jdbcType=VARCHAR},
+      </if>
+      <if test="parentCode != null">
+        #{parentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="structureOrder != null">
+        #{structureOrder,jdbcType=INTEGER},
+      </if>
+      <if test="structureLayer != null">
+        #{structureLayer,jdbcType=INTEGER},
+      </if>
+      <if test="isvaild != null">
+        #{isvaild,jdbcType=BIT},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="createdDt != null">
+        #{createdDt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createdBy != null">
+        #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="changeDt != null">
+        #{changeDt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="changeBy != null">
+        #{changeBy,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="pers.nasanir.fountain.hr.structure.entity.StructureVO">
+    update fountain_hr_structure
+    <set>
+      <if test="structureCode != null">
+        STRUCTURE_CODE = #{structureCode,jdbcType=VARCHAR},
+      </if>
+      <if test="structureName != null">
+        STRUCTURE_NAME = #{structureName,jdbcType=VARCHAR},
+      </if>
+      <if test="parentCode != null">
+        PARENT_CODE = #{parentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="structureOrder != null">
+        STRUCTURE_ORDER = #{structureOrder,jdbcType=INTEGER},
+      </if>
+      <if test="structureLayer != null">
+        STRUCTURE_LAYER = #{structureLayer,jdbcType=INTEGER},
+      </if>
+      <if test="isvaild != null">
+        ISVAILD = #{isvaild,jdbcType=BIT},
+      </if>
+      <if test="description != null">
+        DESCRIPTION = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="createdDt != null">
+        CREATED_DT = #{createdDt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createdBy != null">
+        CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      </if>
+      <if test="changeDt != null">
+        CHANGE_DT = #{changeDt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="changeBy != null">
+        CHANGE_BY = #{changeBy,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where STRUCTURE_ID = #{structureId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="pers.nasanir.fountain.hr.structure.entity.StructureVO">
+    update fountain_hr_structure
+    set STRUCTURE_CODE = #{structureCode,jdbcType=VARCHAR},
+      STRUCTURE_NAME = #{structureName,jdbcType=VARCHAR},
+      PARENT_CODE = #{parentCode,jdbcType=VARCHAR},
+      STRUCTURE_ORDER = #{structureOrder,jdbcType=INTEGER},
+      STRUCTURE_LAYER = #{structureLayer,jdbcType=INTEGER},
+      ISVAILD = #{isvaild,jdbcType=BIT},
+      DESCRIPTION = #{description,jdbcType=VARCHAR},
+      CREATED_DT = #{createdDt,jdbcType=TIMESTAMP},
+      CREATED_BY = #{createdBy,jdbcType=VARCHAR},
+      CHANGE_DT = #{changeDt,jdbcType=TIMESTAMP},
+      CHANGE_BY = #{changeBy,jdbcType=VARCHAR}
+    where STRUCTURE_ID = #{structureId,jdbcType=BIGINT}
+  </update>
+</mapper>

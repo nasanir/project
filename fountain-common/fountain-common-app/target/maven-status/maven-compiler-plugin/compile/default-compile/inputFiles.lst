@@ -2,7 +2,6 @@ F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fou
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\user\entity\UserVO.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\db\impl\IJdbcBaseService.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\shiro\conf\ShiroConfig.java
-F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\dbmanger\service\DbMangerServiceImpl.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\reflect\MethodInvoker.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\common\constant\CommonConstant.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\login\filter\LoginAuthenticationFilter.java
@@ -21,9 +20,7 @@ F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fou
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\crypto\factory\CryptoFactory.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\reflect\ClassInfo.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\common\entity\VOSet.java
-F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\function\ctrl\FunctionController.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\common\anno\PeaceField.java
-F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\function\entity\FuncVO.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\sql\factroy\SqlManager.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\reflect\Invoker.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\common\anno\PeaceTable.java
@@ -34,14 +31,10 @@ F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fou
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\common\entity\AbstractVO.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\db\provider\BaseProvider.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\db\service\JdbcBaseServiceImpl.java
-F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\dbmanger\ctrl\DbMangerController.java
-F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\function\service\FuncServiceImpl.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\sql\constant\SqlEnum.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\db\util\TableVoUtils.java
-F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\dbmanger\itf\DbMangerService.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\reflect\ClassUtils.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\exception\ReflectRuntimeException.java
-F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\function\itf\IFuncService.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\sql\abst\AbstractSqlBuilder.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\sql\itf\ISqlbuilder.java
 F:\wk\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\common\entity\DataVO.java

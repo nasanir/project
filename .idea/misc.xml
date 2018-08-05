@@ -5,6 +5,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/fountain-common/pom.xml" />
+        <option value="$PROJECT_DIR$/fountain-project/pom.xml" />
+        <option value="$PROJECT_DIR$/fountain-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/fountain-hr/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis-generator-use/pom.xml" />
       </list>
     </option>
   </component>

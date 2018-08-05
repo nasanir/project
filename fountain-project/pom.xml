@@ -14,8 +14,6 @@
 
 
     <dependencies>
-
-
         <dependency>
             <groupId>pers.nasanir.fountain</groupId>
             <artifactId>fountain-common-app</artifactId>

@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fountain-common" />
+        <module name="fountain-common-app" />
+        <module name="fountain-hr-app" />
+        <module name="fountain-manager-app" />
+        <module name="fountain-project-app" />
+        <module name="mybatis-generator-use" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="fountain-common-app" target="1.5" />
+      <module name="mybatis-generator" target="1.8" />
+      <module name="mybatis-generator-common" target="1.8" />
+      <module name="mybatisgeneratorcommon" target="1.8" />
       <module name="project" target="1.5" />
     </bytecodeTargetLevel>
   </component>
