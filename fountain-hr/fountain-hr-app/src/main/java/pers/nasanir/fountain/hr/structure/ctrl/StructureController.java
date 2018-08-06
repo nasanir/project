@@ -6,8 +6,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import pers.nasanir.fountain.hr.structure.entity.StructureVO;
 import pers.nasanir.fountain.hr.structure.itf.IStructureService;
-import pers.nasanir.fountain.hr.structure.service.StructureServiceImpl;
-import pers.nasanir.foutain.manager.dbmanger.itf.DbMangerService;
 
 import java.io.IOException;
 import java.util.List;

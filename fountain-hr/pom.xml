@@ -11,6 +11,7 @@
     <modules>
         <module>fountain-hr-app</module>
     </modules>
+
     <dependencies>
         <dependency>
             <groupId>pers.nasanir.fountain</groupId>

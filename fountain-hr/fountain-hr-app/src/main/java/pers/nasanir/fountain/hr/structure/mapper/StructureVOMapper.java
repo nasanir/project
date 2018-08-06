@@ -4,7 +4,7 @@ import org.apache.ibatis.annotations.Mapper;
 import pers.nasanir.fountain.hr.structure.entity.StructureVO;
 
 import java.util.List;
-@Mapper
+
 public interface StructureVOMapper {
     int deleteByPrimaryKey(Long structureId);
 
