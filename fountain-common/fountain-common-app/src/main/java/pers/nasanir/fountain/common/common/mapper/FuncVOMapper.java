@@ -1,6 +1,6 @@
-package pers.nasanir.fountain.manager.function.entity;
+package pers.nasanir.fountain.common.common.mapper;
 
-import pers.nasanir.fountain.manager.function.entity.FuncVO;
+import pers.nasanir.fountain.common.common.entity.FuncVO;
 
 public interface FuncVOMapper {
     int deleteByPrimaryKey(Long functionId);
@@ -10,6 +10,10 @@ public interface FuncVOMapper {
     int insertSelective(FuncVO record);
 
     FuncVO selectByPrimaryKey(Long functionId);
+
+    FuncVO selectByCode(String functionCode);
+
+    FuncVO selectByName(String functionName);
 
     int updateByPrimaryKeySelective(FuncVO record);
 

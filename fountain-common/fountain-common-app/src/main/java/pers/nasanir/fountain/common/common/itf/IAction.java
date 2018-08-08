@@ -1,4 +1,4 @@
-package pers.nasanir.fountain.manager.function.itf;
+package pers.nasanir.fountain.common.common.itf;
 
 import pers.nasanir.fountain.common.common.entity.ResultVO;
 

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="pers.nasanir.fountain.manager.function.entity.FuncVOMapper">
-  <resultMap id="BaseResultMap" type="pers.nasanir.fountain.manager.function.entity.FuncVO">
+<mapper namespace="pers.nasanir.fountain.common.common.entity.FuncVOMapper">
+  <resultMap id="BaseResultMap" type="pers.nasanir.fountain.common.common.entity.FuncVO">
     <id column="FUNCTION_ID" jdbcType="BIGINT" property="functionId" />
+    <result column="TABLE_NAME" jdbcType="VARCHAR" property="tableName" />
     <result column="FUNCTION_CODE" jdbcType="VARCHAR" property="functionCode" />
     <result column="FUNCTION_NAME" jdbcType="VARCHAR" property="functionName" />
     <result column="FUNCTION_ENTITY" jdbcType="VARCHAR" property="functionEntity" />
     <result column="FUNC_WHERE" jdbcType="VARCHAR" property="funcWhere" />
+    <result column="ORDER_BY" jdbcType="VARCHAR" property="orderBy" />
     <result column="ISVAILD" jdbcType="BIT" property="isvaild" />
     <result column="DESCRIPTION" jdbcType="VARCHAR" property="description" />
     <result column="CREATED_DT" jdbcType="TIMESTAMP" property="createdDt" />
@@ -15,8 +17,8 @@
     <result column="CHANGE_BY" jdbcType="VARCHAR" property="changeBy" />
   </resultMap>
   <sql id="Base_Column_List">
-    FUNCTION_ID, FUNCTION_CODE, FUNCTION_NAME, FUNCTION_ENTITY, FUNC_WHERE, ISVAILD, 
-    DESCRIPTION, CREATED_DT, CREATED_BY, CHANGE_DT, CHANGE_BY
+    FUNCTION_ID, TABLE_NAME, FUNCTION_CODE, FUNCTION_NAME, FUNCTION_ENTITY, FUNC_WHERE, 
+    ORDER_BY, ISVAILD, DESCRIPTION, CREATED_DT, CREATED_BY, CHANGE_DT, CHANGE_BY
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
@@ -24,25 +26,36 @@
     from fountain_manager_function
     where FUNCTION_ID = #{functionId,jdbcType=BIGINT}
   </select>
+  <select id="selectByCode" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from fountain_manager_function
+    where FUNCTION_CODE =#{functionCode,jdbcType=VARCHAR}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from fountain_manager_function
     where FUNCTION_ID = #{functionId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="pers.nasanir.fountain.manager.function.entity.FuncVO">
-    insert into fountain_manager_function (FUNCTION_ID, FUNCTION_CODE, FUNCTION_NAME, 
-      FUNCTION_ENTITY, FUNC_WHERE, ISVAILD, 
-      DESCRIPTION, CREATED_DT, CREATED_BY, 
-      CHANGE_DT, CHANGE_BY)
-    values (#{functionId,jdbcType=BIGINT}, #{functionCode,jdbcType=VARCHAR}, #{functionName,jdbcType=VARCHAR}, 
-      #{functionEntity,jdbcType=VARCHAR}, #{funcWhere,jdbcType=VARCHAR}, #{isvaild,jdbcType=BIT}, 
-      #{description,jdbcType=VARCHAR}, #{createdDt,jdbcType=TIMESTAMP}, #{createdBy,jdbcType=VARCHAR}, 
-      #{changeDt,jdbcType=TIMESTAMP}, #{changeBy,jdbcType=VARCHAR})
+  <insert id="insert" parameterType="pers.nasanir.fountain.common.common.entity.FuncVO">
+    insert into fountain_manager_function (FUNCTION_ID, TABLE_NAME, FUNCTION_CODE, 
+      FUNCTION_NAME, FUNCTION_ENTITY, FUNC_WHERE, 
+      ORDER_BY, ISVAILD, DESCRIPTION, 
+      CREATED_DT, CREATED_BY, CHANGE_DT, 
+      CHANGE_BY)
+    values (#{functionId,jdbcType=BIGINT}, #{tableName,jdbcType=VARCHAR}, #{functionCode,jdbcType=VARCHAR}, 
+      #{functionName,jdbcType=VARCHAR}, #{functionEntity,jdbcType=VARCHAR}, #{funcWhere,jdbcType=VARCHAR}, 
+      #{orderBy,jdbcType=VARCHAR}, #{isvaild,jdbcType=BIT}, #{description,jdbcType=VARCHAR}, 
+      #{createdDt,jdbcType=TIMESTAMP}, #{createdBy,jdbcType=VARCHAR}, #{changeDt,jdbcType=TIMESTAMP}, 
+      #{changeBy,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="pers.nasanir.fountain.manager.function.entity.FuncVO">
+  <insert id="insertSelective" parameterType="pers.nasanir.fountain.common.common.entity.FuncVO">
     insert into fountain_manager_function
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="functionId != null">
         FUNCTION_ID,
+      </if>
+      <if test="tableName != null">
+        TABLE_NAME,
       </if>
       <if test="functionCode != null">
         FUNCTION_CODE,
@@ -55,6 +68,9 @@
       </if>
       <if test="funcWhere != null">
         FUNC_WHERE,
+      </if>
+      <if test="orderBy != null">
+        ORDER_BY,
       </if>
       <if test="isvaild != null">
         ISVAILD,
@@ -79,6 +95,9 @@
       <if test="functionId != null">
         #{functionId,jdbcType=BIGINT},
       </if>
+      <if test="tableName != null">
+        #{tableName,jdbcType=VARCHAR},
+      </if>
       <if test="functionCode != null">
         #{functionCode,jdbcType=VARCHAR},
       </if>
@@ -90,6 +109,9 @@
       </if>
       <if test="funcWhere != null">
         #{funcWhere,jdbcType=VARCHAR},
+      </if>
+      <if test="orderBy != null">
+        #{orderBy,jdbcType=VARCHAR},
       </if>
       <if test="isvaild != null">
         #{isvaild,jdbcType=BIT},
@@ -111,9 +133,12 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="pers.nasanir.fountain.manager.function.entity.FuncVO">
+  <update id="updateByPrimaryKeySelective" parameterType="pers.nasanir.fountain.common.common.entity.FuncVO">
     update fountain_manager_function
     <set>
+      <if test="tableName != null">
+        TABLE_NAME = #{tableName,jdbcType=VARCHAR},
+      </if>
       <if test="functionCode != null">
         FUNCTION_CODE = #{functionCode,jdbcType=VARCHAR},
       </if>
@@ -125,6 +150,9 @@
       </if>
       <if test="funcWhere != null">
         FUNC_WHERE = #{funcWhere,jdbcType=VARCHAR},
+      </if>
+      <if test="orderBy != null">
+        ORDER_BY = #{orderBy,jdbcType=VARCHAR},
       </if>
       <if test="isvaild != null">
         ISVAILD = #{isvaild,jdbcType=BIT},
@@ -147,12 +175,14 @@
     </set>
     where FUNCTION_ID = #{functionId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="pers.nasanir.fountain.manager.function.entity.FuncVO">
+  <update id="updateByPrimaryKey" parameterType="pers.nasanir.fountain.common.common.entity.FuncVO">
     update fountain_manager_function
-    set FUNCTION_CODE = #{functionCode,jdbcType=VARCHAR},
+    set TABLE_NAME = #{tableName,jdbcType=VARCHAR},
+      FUNCTION_CODE = #{functionCode,jdbcType=VARCHAR},
       FUNCTION_NAME = #{functionName,jdbcType=VARCHAR},
       FUNCTION_ENTITY = #{functionEntity,jdbcType=VARCHAR},
       FUNC_WHERE = #{funcWhere,jdbcType=VARCHAR},
+      ORDER_BY = #{orderBy,jdbcType=VARCHAR},
       ISVAILD = #{isvaild,jdbcType=BIT},
       DESCRIPTION = #{description,jdbcType=VARCHAR},
       CREATED_DT = #{createdDt,jdbcType=TIMESTAMP},

@@ -28,7 +28,7 @@ public class BaseRealm extends AuthorizingRealm {
 		String password = new String((char[]) token.getCredentials());
 		UserVO userVO = new UserVO();
 		userVO.setUsername(username);
-		userVO = (UserVO) jdbcBaseService.query(userVO);
+		//userVO = (UserVO) jdbcBaseService.query(userVO);
 		if (userVO.getUserid() != null) {
 			String psd = userVO.getPassword();
 			if (!psd.equals(password)) {

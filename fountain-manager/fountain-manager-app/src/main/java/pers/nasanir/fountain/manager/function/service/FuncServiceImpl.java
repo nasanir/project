@@ -6,7 +6,6 @@ import pers.nasanir.fountain.common.common.entity.AbstractVO;
 import pers.nasanir.fountain.common.common.entity.DataVO;
 import pers.nasanir.fountain.common.common.entity.VOSet;
 import pers.nasanir.fountain.common.db.impl.IJdbcBaseService;
-import pers.nasanir.fountain.manager.function.entity.FuncVO;
 import pers.nasanir.fountain.manager.function.itf.IFuncService;
 
 import java.util.ArrayList;

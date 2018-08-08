@@ -26,32 +26,102 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseAction.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/action/BaseAction.java">
+      <file leaf-file-name="MysqlSqlBuilder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/service/MysqlSqlBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="114">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlFactroy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/factroy/SqlFactroy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FuncVOMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/mapper/FuncVOMapper.java">
+      <file leaf-file-name="CrudDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/impl/CrudDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="114">
+              <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FuncServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/service/FuncServiceImpl.java">
+      <file leaf-file-name="DbConstant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/constant/DbConstant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/provider/BaseProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QueryVO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/QueryVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#678#679#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ISqlbuilder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/itf/ISqlbuilder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcBaseDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/orm/JdbcBaseDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+              <folding>
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#777#778#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapperProxy.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/apache-maven-3.2.2_repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperProxy.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapperMethod.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/apache-maven-3.2.2_repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="312" selection-start-line="312" selection-end-line="312" />
             </state>
           </provider>
         </entry>
@@ -76,6 +146,7 @@
       <find>\&lt;\?xml version\=\&quot;1\.0\&quot; encoding\=\&quot;UTF\-8\&quot;\?\&gt;\n\&lt;project xmlns\=\&quot;http\:\/\/maven\.apache\.org\/POM\/4\.0\.0\&quot;\n         xmlns\:xsi\=\&quot;http\:\/\/www\.w3\.org\/2001\/XMLSchema\-instance\&quot;\n         xsi\:schemaLocation\=\&quot;http\:\/\/maven\.apache\.org\/POM\/4\.0\.0 http\:\/\/maven\.apache\.org\/xsd\/maven\-4\.0\.0\.xsd\&quot;\&gt;\n    \&lt;modelVersion\&gt;4\.0\.0\&lt;\/modelVersion\&gt;\n\n    \&lt;groupId\&gt;pers\.nasanir\.fountain\&lt;\/groupId\&gt;\n    \&lt;artifactId\&gt;fountain\-hr\&lt;\/artifactId\&gt;\n    \&lt;version\&gt;1\.0\-SNAPSHOT\&lt;\/version\&gt;\n    \&lt;dependencies\&gt;\n        \&lt;dependency\&gt;\n            \&lt;groupId\&gt;pers\.nasanir\.fountain\&lt;\/groupId\&gt;\n            \&lt;artifactId\&gt;fountain\-common\-app\&lt;\/artifactId\&gt;\n            \&lt;version\&gt;1\.0\-SNAPSHOT\&lt;\/version\&gt;\n        \&lt;\/dependency\&gt;\n    \&lt;\/dependencies\&gt;\n    \n\&lt;\/project\&gt;</find>
       <find>package pers\.nasanir\.foutain\.manager\.menus\.entity\;\n\nimport pers\.nasanir\.fountain\.common\.common\.anno\.PeaceField\;\nimport pers\.nasanir\.fountain\.common\.common\.anno\.PeaceTable\;\n\n\@PeaceTable\(name \= \&quot;FOUNTAIN_MANAGER_MENUS\&quot;\)\npublic class MenusVO \{\n    \@PeaceField\(isPk \= true\, lenght \= \&quot;19\&quot;\, type \= \&quot;bigint\&quot;\)\n    private long menus_id\;\n    \@PeaceField\n    private String menus_code\;\n    \@PeaceField\n    private String menus_name\;\n    \@PeaceField\n    private String parent_code\;\n    \@PeaceField\(lenght \= \&quot;5\&quot;\, type \= \&quot;int\&quot;\)\n    private int menus_order\;\n    \@PeaceField\(lenght \= \&quot;2\&quot;\, type \= \&quot;int\&quot;\)\n    private int menus_layer\;\n    \@PeaceField\n    private String func_code\;\n    \@PeaceField\(lenght \= \&quot;1\&quot;\, type \= \&quot;tinyint\&quot;\)\n    private boolean isvaild\;\n    \n    \n\}\n</find>
       <find>package pers\.nasanir\.foutain\.manager\.menus\.entity\;\n\nimport pers\.nasanir\.fountain\.common\.common\.anno\.PeaceField\;\nimport pers\.nasanir\.fountain\.common\.common\.anno\.PeaceTable\;\n\n\@PeaceTable\(name \= \&quot;FOUNTAIN_MANAGER_MENUS\&quot;\)\npublic class MenusVO \{\n    \@PeaceField\(isPk \= true\, lenght \= \&quot;19\&quot;\, type \= \&quot;bigint\&quot;\)\n    private long menus_id\;\n    \@PeaceField\n    private String menus_code\;\n    \@PeaceField\n    private String menus_name\;\n    \@PeaceField\n    private String parent_code\;\n    \@PeaceField\n    private String func_code\;\n\n    public long getMenus_id\(\) \{\n        return menus_id\;\n    \}\n\n    public void setMenus_id\(long menus_id\) \{\n        this\.menus_id \= menus_id\;\n    \}\n\n    public String getMenus_code\(\) \{\n        return menus_code\;\n    \}\n\n    public void setMenus_code\(String menus_code\) \{\n        this\.menus_code \= menus_code\;\n    \}\n\n    public String getMenus_name\(\) \{\n        return menus_name\;\n    \}\n\n    public void setMenus_name\(String menus_name\) \{\n        this\.menus_name \= menus_name\;\n    \}\n\n    public String getParent_code\(\) \{\n        return parent_code\;\n    \}\n\n    public void setParent_code\(String parent_code\) \{\n        this\.parent_code \= parent_code\;\n    \}\n\n    public String getFunc_code\(\) \{\n        return func_code\;\n    \}\n\n    public void setFunc_code\(String func_code\) \{\n        this\.func_code \= func_code\;\n    \}\n\n    public int getMenus_order\(\) \{\n        return menus_order\;\n    \}\n\n    public void setMenus_order\(int menus_order\) \{\n        this\.menus_order \= menus_order\;\n    \}\n\n    public int getMenus_layer\(\) \{\n        return menus_layer\;\n    \}\n\n    public void setMenus_layer\(int menus_layer\) \{\n        this\.menus_layer \= menus_layer\;\n    \}\n\n    public boolean isIsvaild\(\) \{\n        return isvaild\;\n    \}\n\n    public void setIsvaild\(boolean isvaild\) \{\n        this\.isvaild \= isvaild\;\n    \}\n\n    public String getType\(\) \{\n        return type\;\n    \}\n\n    public void setType\(String type\) \{\n        this\.type \= type\;\n    \}\n\n    \@PeaceField\(lenght \= \&quot;5\&quot;\, type \= \&quot;int\&quot;\)\n    private int menus_order\;\n    \@PeaceField\(lenght \= \&quot;2\&quot;\, type \= \&quot;int\&quot;\)\n    private int menus_layer\;\n    \@PeaceField\(lenght \= \&quot;1\&quot;\, type \= \&quot;tinyint\&quot;\)\n    private boolean isvaild\;\n    \@PeaceField\n    private String type\;\n\}\n</find>
+      <find>package pers\.nasanir\.fountain\.common\.sql\.service\;\n\n\nimport pers\.nasanir\.fountain\.common\.common\.anno\.PeaceField\;\nimport pers\.nasanir\.fountain\.common\.common\.anno\.PeaceTable\;\nimport pers\.nasanir\.fountain\.common\.common\.entity\.AbstractVO\;\nimport pers\.nasanir\.fountain\.common\.common\.entity\.QueryVO\;\nimport pers\.nasanir\.fountain\.common\.reflect\.ClassInfo\;\nimport pers\.nasanir\.fountain\.common\.sql\.abst\.AbstractSqlBuilder\;\nimport pers\.nasanir\.fountain\.common\.sql\.constant\.DbConstant\;\nimport pers\.nasanir\.fountain\.common\.sql\.entity\.SqlVO\;\n\nimport java\.lang\.annotation\.Annotation\;\nimport java\.lang\.reflect\.Field\;\nimport java\.util\.ArrayList\;\nimport java\.util\.HashMap\;\nimport java\.util\.List\;\nimport java\.util\.Locale\;\n\npublic class MysqlSqlBuilder extends AbstractSqlBuilder \{\n\n    private HashMap\&lt;String\, Field\&gt; fieldMap\;\n\n    \@Override\n    public SqlVO getQuerySql\(QueryVO vo\) \{\n        if\(vo\!\=null\)\{\n         String funcCode\=vo\.getFuncCode\(\)\;\n         String where\=vo\.getWhere\(\)\;\n         String groupBy\=vo\.getGroupBy\(\)\;\n         String orderBy\=vo\.getOrderBy\(\)\;\n         \n         if\(funcCode\!\=null\&amp;\&amp;funcCode\.length\(\)\&gt;0\)\{\n             \n         \}\n        \}\n        return null\;\n    \}\n\n    \/\*\*\n     \* 创建数据库脚本\n     \*\n     \* \@param classInfoMap\n     \* \@return\n     \*\/\n    \@Override\n    public List\&lt;String\&gt; getCreateSql\(HashMap\&lt;String\, ClassInfo\&gt; classInfoMap\) \{\n        List\&lt;String\&gt; createSqlList \= new ArrayList\&lt;String\&gt;\(\)\;\n        \/\/遍历vomap\n        for \(String className \: classInfoMap\.keySet\(\)\) \{\n            ClassInfo classInfo \= classInfoMap\.get\(className\)\;\n            PeaceTable tableAnno \= \(PeaceTable\) classInfo\.getAnnotation\(PeaceTable\.class\)\;\n            \/\/如果有peacetable注解则为实体类\n            if \(tableAnno \!\= null\) \{\n                \/\/取得实体表名\n                String tableName \= tableAnno\.name\(\)\.toUpperCase\(Locale\.ROOT\)\;\n\n                StringBuffer fieldBf \= new StringBuffer\(\)\;\n                \/\/取得字段map\n                HashMap\&lt;String\, Field\&gt; fieldMap \= classInfo\.getFieldMap\(\)\;\n                for \(String fieldName \: fieldMap\.keySet\(\)\) \{\n                    Field field \= fieldMap\.get\(fieldName\)\;\n                    Annotation peaceField \= field\.getAnnotation\(PeaceField\.class\)\;\n                    \/\/如果有注解则为物理表字段\n                    if \(peaceField \!\= null\) \{\n                        if \(\(\(PeaceField\) peaceField\)\.isVaild\(\)\) \{\n                            \/\/字段长度\n                            String fieldLenght \= \(\(PeaceField\) peaceField\)\.lenght\(\)\;\n                            \/\/字段类型\n                            String fieldType \= \(\(PeaceField\) peaceField\)\.type\(\)\.toUpperCase\(Locale\.ROOT\)\;\n                            String fieldNameUp\=fieldName\.toUpperCase\(Locale\.ROOT\)\;\n                            fieldBf\.append\(fieldNameUp\)\n                                    \.append\(DbConstant\.SIGN_BLANK\)\n                                    \.append\(fieldType\)\n                                    \.append\(DbConstant\.SIGN_LEFT_BRACKET\)\n                                    \.append\(fieldLenght\)\n                                    \.append\(DbConstant\.SIGN_RIGHT_BRACKET\)\;\n                            \/\/如果字段为主键\n                            if \(\(\(PeaceField\) peaceField\)\.isPk\(\)\) \{\n                                fieldBf\.append\(DbConstant\.SIGN_BLANK\)\n                                        \.append\(DbConstant\.KEY_NOTNUL\)\n                                        \.append\(DbConstant\.SIGN_BLANK\)\n                                        \.append\(DbConstant\.KEY_PRIMARY\)\;\n                            \}\n\n                            fieldBf\.append\(DbConstant\.SIGN_COMMA\)\;\n                        \}\n                    \}\n                \}\n\n                if \(fieldBf\.length\(\) \&gt; 0\) \{\n                    fieldBf\.deleteCharAt\(fieldBf\.length\(\) \- 1\)\;\n                    createSqlList\.add\(DbConstant\.CREATESQL\n                            \.replace\(DbConstant\.ARG_TABLENAME\, tableName\)\n                            \.replace\(DbConstant\.ARG_FIELDNAME\, fieldBf\.toString\(\)\)\)\;\n                \}\n\n            \}\n        \}\n        return createSqlList\;\n    \}\n\}\n</find>
     </findStrings>
     <replaceStrings>
       <replace>classInfo</replace>
@@ -84,28 +155,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/crypto/abst/AbstractEncoder.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/BlogApplicationMain.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/constant/DbConstant.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/util/TableVoUtils.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/reflect/ClassUtils.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/itf/ISqlbuilder.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/dbmanger/service/DbMangerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/reflect/ClassInfo.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/anno/PeaceField.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/service/MysqlSqlBuilder.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/abst/AbstractSqlBuilder.java" />
-        <option value="$PROJECT_DIR$/fountain-project/pom.xml" />
-        <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/foutain/manager/function/function/service/FuncServiceImpl.java" />
-        <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/foutain/manager/function/ctrl/FunctionController.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/BaseVO.java" />
-        <option value="$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/structure/entity/StructureVO.java" />
-        <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/foutain/manager/menus/entity/MenusVO.java" />
-        <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/foutain/manager/menus/ctrl/MenusController.java" />
         <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/foutain/manager/menu/itf/IMenuService.java" />
         <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/foutain/manager/menu/service/MenuServiceImpl.java" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/fountain-common/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis-generator/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis-generator/src/main/resources/generatorConfig.xml" />
@@ -122,11 +173,9 @@
         <option value="$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/HrApplicationMain.java" />
         <option value="$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/resources/mapper/StructureVOMapper.xml" />
         <option value="$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/action/BaseAction.java" />
         <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/itf/IAction.java" />
         <option value="$PROJECT_DIR$/fountain-hr/pom.xml" />
         <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/foutain/manager/function/action/BaseAction.java" />
-        <option value="$PROJECT_DIR$/mybatis-generator-use/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/structure/mapper/StructureVOMapper.java" />
         <option value="$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/structure/itf/IStructureService.java" />
         <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/resources/mapper/FuncVOMapper.xml" />
@@ -135,6 +184,28 @@
         <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/ResultVO.java" />
         <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/itf/IAction.java" />
         <option value="$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/action/BaseAction.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/action/BaseAction.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/mapper/FuncVOMapper.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/mapper/FieldVOMapper.xml" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/mapper/FieldVOMapper.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/action/BaseAction.java" />
+        <option value="$PROJECT_DIR$/mybatis-generator-use/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/mapper/FuncVOMapper.xml" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/FuncVO.java" />
+        <option value="$PROJECT_DIR$/mybatis-generator-use/src/main/java/pers/nasanir/fountain/common/common/entity/FuncVOMapper.xml" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/abst/AbstractSqlBuilder.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/itf/ISqlbuilder.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/provider/BaseProvider.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/QueryVO.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/impl/CrudDao.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/impl/IJdbcBaseService.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/orm/JdbcBaseDao.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/service/JdbcBaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/login/ctrl/LoginController.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/shiro/service/BaseRealm.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/service/MysqlSqlBuilder.java" />
+        <option value="$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/constant/DbConstant.java" />
       </list>
     </option>
   </component>
@@ -176,15 +247,6 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="fountain-manager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="fountain-manager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="mybatis-generator-use" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -210,7 +272,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="95" />
     <option name="y" value="32" />
     <option name="width" value="1400" />
@@ -222,6 +284,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fountain-common" type="58d84e3e:PackageViewProjectNode" />
+              <item name="fountain-common-app" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="58d84e3e:PackageViewProjectNode" />
+              <item name="fountain-common-app" type="616d4139:PackageViewModuleNode" />
+              <item name="src" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -308,7 +387,7 @@
               <item name="nasanir" type="462c0819:PsiDirectoryNode" />
               <item name="fountain" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
@@ -321,284 +400,260 @@
               <item name="nasanir" type="462c0819:PsiDirectoryNode" />
               <item name="fountain" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="ctrl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="abst" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="factroy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="itf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pers" type="462c0819:PsiDirectoryNode" />
+              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
-              <item name="ctrl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fountain-manager" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain-manager-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis-generator-use" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pers" type="462c0819:PsiDirectoryNode" />
-              <item name="nasanir" type="462c0819:PsiDirectoryNode" />
-              <item name="fountain" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-              <item name="function" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -610,22 +665,6 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="fountain-common-app" type="cbb8eebc:String" user="fountain-common-app" />
               <item name="fountain-common/fountain-common-app" type="cbb8eebc:String" user="fountain-common/fountain-common-app" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="fountain-common" type="58d84e3e:PackageViewProjectNode" />
-              <item name="fountain-common-app" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="fountain-common" type="58d84e3e:PackageViewProjectNode" />
-              <item name="fountain-common-app" type="616d4139:PackageViewModuleNode" />
-              <item name="src" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -652,21 +691,25 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\wk\project\fountain-common\fountain-common-app\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pers.nasanir.fountain.common.common.entity" />
+      <recent name="pers.nasanir.fountain.common.common.mapper" />
       <recent name="pers.nasanir.fountain.manager.function.mapper" />
       <recent name="pers.nasanir.fountain.hr.structure.mapper" />
       <recent name="pers.nasanir.fountain.hr.structure.service" />
-      <recent name="pers.nasanir.fountain.hr" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\wk\project\fountain-common\fountain-common-app\src\main\resources\mapper" />
+      <recent name="F:\wk\project\fountain-common\fountain-common-app\src\main\resources" />
       <recent name="F:\wk\project\fountain-manager\fountain-manager-app\src\main\java\pers\nasanir\fountain\manager\function\entity" />
       <recent name="F:\wk\project\fountain-manager\fountain-manager-app\src\main\resources\mapper" />
       <recent name="F:\wk\project\fountain-manager\fountain-manager-app\src\main\resources" />
-      <recent name="F:\wk\project\fountain-hr\fountain-hr-app\src\main\resources\mapper" />
-      <recent name="F:\wk\project\fountain-hr\fountain-hr-app\src\main\java\pers\nasanir\fountain\hr\structure\entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -681,7 +724,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.HrApplicationMain">
+  <component name="RunManager" selected="Spring Boot.BlogApplicationMain">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -710,6 +753,16 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" />
       <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="BlogApplicationMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="fountain-common-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.nasanir.fountain.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="pers.nasanir.fountain.common.BlogApplicationMain" />
     </configuration>
     <configuration name="HrApplicationMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="fountain-hr-app" />
@@ -756,9 +809,11 @@
     <list>
       <item itemvalue="Spring Boot.ProjectApplicationMain" />
       <item itemvalue="Spring Boot.HrApplicationMain" />
+      <item itemvalue="Spring Boot.BlogApplicationMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.BlogApplicationMain" />
         <item itemvalue="Spring Boot.HrApplicationMain" />
         <item itemvalue="Spring Boot.ProjectApplicationMain" />
       </list>
@@ -785,14 +840,16 @@
       <workItem from="1533435574694" duration="3574000" />
       <workItem from="1533449100664" duration="10288000" />
       <workItem from="1533565665742" duration="5570000" />
+      <workItem from="1533734735248" duration="3539000" />
+      <workItem from="1533738466892" duration="2405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64471000" />
+    <option name="totallyTimeSpent" value="70415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="9" />
@@ -805,8 +862,9 @@
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.27666315" />
+      <window_info anchor="bottom" id="Debug" order="5" visible="true" weight="0.35691658" />
       <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32946146" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
@@ -818,16 +876,15 @@
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.209375" />
       <window_info anchor="right" id="Bean Validation" order="0" />
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="3" visible="true" weight="0.32946146" />
       <window_info id="Learn" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32946146" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32946146" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -847,11 +904,39 @@
           </properties>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/service/MysqlSqlBuilder.java</url>
+          <line>30</line>
+          <properties class="pers.nasanir.fountain.common.sql.service.MysqlSqlBuilder" method="getQuerySql">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/provider/BaseProvider.java</url>
+          <line>8</line>
+          <properties class="pers.nasanir.fountain.common.db.provider.BaseProvider" method="query">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/orm/JdbcBaseDao.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/factroy/SqlFactroy.java</url>
+          <line>9</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="20" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
@@ -876,153 +961,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mybatis-generator-common/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-project/fountain-project-app/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="134" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/java/pers/nasanir/fountain/hr/structure/entity/UserKey.java" />
-    <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/java/pers/nasanir/fountain/hr/structure/entity/User.java" />
-    <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/java/pers/nasanir/fountain/hr/structure/entity/UserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-project/fountain-project-app/src/main/java/pers/nasanir/fountain/project/ProjectApplicationMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/BaseVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/java/pers/nasanir/fountain/hr/structure/entity/UserMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/structure/entity/StructureVO1.java" />
-    <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/java/pers/nasanir/fountain/hr/structure/entity/StructureVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1013">
-          <caret line="7" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/structure/entity/StructureVOMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/fountain-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/structure/entity/StructureVOMapper.java" />
-    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/user/itf/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/structure/service/UserServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/user/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/dbmanger/service/DbMangerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/login/ctrl/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/dbmanger/ctrl/DbMangerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/dbmanger/itf/DbMangerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/apache-maven-3.2.2_repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/annotations/Flush.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/structure/ctrl/StructureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/apache-maven-3.2.2_repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/session/Configuration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="728" selection-start-line="728" selection-end-line="728" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/apache-maven-3.2.2_repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="303" column="30" selection-start-line="303" selection-start-column="30" selection-end-line="303" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1044,9 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1085,23 +1024,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/resources/mapper/StructureVOMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/entity/FuncVOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/resources/mapper/StructureVOMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/entity/FuncVOMapper.java" />
     <entry file="file://$PROJECT_DIR$/fountain-hr/fountain-hr-app/src/main/java/pers/nasanir/fountain/hr/HrApplicationMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1116,9 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,9 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1136,68 +1054,266 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/resources/mapper/FuncVOMapper.xml">
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/mapper/FuncVOMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12">
           <caret line="31" column="39" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/ReturnVO.java">
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/ReturnVO.java" />
+    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/entity/FuncVO.java" />
+    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/dbmanger/ctrl/DbMangerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/ResultVO.java">
+    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/menu/ctrl/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/itf/IAction.java">
+    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/ctrl/FunctionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/entity/FuncVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-976">
-          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/mapper/FuncVOMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="114">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/service/FuncServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="259">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fountain-manager/fountain-manager-app/src/main/java/pers/nasanir/fountain/manager/function/action/BaseAction.java">
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/itf/IAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="8" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/FieldVO.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/mapper/FuncVOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/mapper/FieldVOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/mapper/FieldVOMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/action/BaseAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/java/pers/nasanir/fountain/common/common/entity/FuncVOMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/ResultVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/java/pers/nasanir/fountain/common/common/entity/FuncVOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/mapper/FuncVOMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/FuncVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="71" column="83" lean-forward="true" selection-start-line="71" selection-start-column="76" selection-end-line="71" selection-end-column="83" />
+          <folding>
+            <element signature="e#807#808#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="62" column="75" selection-start-line="62" selection-start-column="75" selection-end-line="62" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/entity/SqlVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="32" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/abst/AbstractSqlBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/impl/IJdbcBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/service/JdbcBaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/shiro/service/BaseRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/login/ctrl/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.2.2_repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.2.2_repository/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/binding/MapperMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="312" selection-start-line="312" selection-end-line="312" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/orm/JdbcBaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+          <folding>
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/impl/CrudDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/itf/ISqlbuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/provider/BaseProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/factroy/SqlFactroy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/common/entity/QueryVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#678#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/constant/DbConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/sql/service/MysqlSqlBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>

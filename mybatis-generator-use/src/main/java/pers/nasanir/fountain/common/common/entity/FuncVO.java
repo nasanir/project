@@ -1,10 +1,12 @@
-package pers.nasanir.fountain.manager.function.entity;
+package pers.nasanir.fountain.common.common.entity;
 
 import java.io.Serializable;
 import java.util.Date;
 
 public class FuncVO implements Serializable {
     private Long functionId;
+
+    private String tableName;
 
     private String functionCode;
 
@@ -13,6 +15,8 @@ public class FuncVO implements Serializable {
     private String functionEntity;
 
     private String funcWhere;
+
+    private String orderBy;
 
     private Boolean isvaild;
 
@@ -34,6 +38,14 @@ public class FuncVO implements Serializable {
 
     public void setFunctionId(Long functionId) {
         this.functionId = functionId;
+    }
+
+    public String getTableName() {
+        return tableName;
+    }
+
+    public void setTableName(String tableName) {
+        this.tableName = tableName == null ? null : tableName.trim();
     }
 
     public String getFunctionCode() {
@@ -66,6 +78,14 @@ public class FuncVO implements Serializable {
 
     public void setFuncWhere(String funcWhere) {
         this.funcWhere = funcWhere == null ? null : funcWhere.trim();
+    }
+
+    public String getOrderBy() {
+        return orderBy;
+    }
+
+    public void setOrderBy(String orderBy) {
+        this.orderBy = orderBy == null ? null : orderBy.trim();
     }
 
     public Boolean getIsvaild() {

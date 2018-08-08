@@ -9,24 +9,33 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import pers.nasanir.fountain.common.common.entity.QueryVO;
 import pers.nasanir.fountain.common.crypto.constant.EncoderEnum;
 import pers.nasanir.fountain.common.crypto.factory.CryptoFactory;
 import pers.nasanir.fountain.common.crypto.itf.IEncoder;
+import pers.nasanir.fountain.common.db.service.JdbcBaseServiceImpl;
 
 @Controller
 public class LoginController {
+    @Autowired
+    JdbcBaseServiceImpl jdbcBaseService;
+
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String loginUrl(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        boolean isremanber = SecurityUtils.getSubject().isRemembered();
-        boolean isAuthenticated = SecurityUtils.getSubject().isAuthenticated();
-        if (isAuthenticated || isremanber) {
-            return "index";
-        }
-        return "login";
+//        boolean isremanber = SecurityUtils.getSubject().isRemembered();
+//        boolean isAuthenticated = SecurityUtils.getSubject().isAuthenticated();
+//        if (isAuthenticated || isremanber) {
+//            return "index";
+//        }
+        QueryVO vo=new QueryVO();
+        vo.setFuncCode("FUNC");
+        jdbcBaseService.query(vo);
+       return "login";
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)

@@ -1,11 +1,17 @@
 package pers.nasanir.fountain.common.sql.service;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import pers.nasanir.fountain.common.common.anno.PeaceField;
 import pers.nasanir.fountain.common.common.anno.PeaceTable;
+import pers.nasanir.fountain.common.common.entity.AbstractVO;
+import pers.nasanir.fountain.common.common.entity.FuncVO;
+import pers.nasanir.fountain.common.common.entity.QueryVO;
+import pers.nasanir.fountain.common.common.mapper.FuncVOMapper;
 import pers.nasanir.fountain.common.reflect.ClassInfo;
 import pers.nasanir.fountain.common.sql.abst.AbstractSqlBuilder;
 import pers.nasanir.fountain.common.sql.constant.DbConstant;
+import pers.nasanir.fountain.common.sql.entity.SqlVO;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -15,8 +21,53 @@ import java.util.List;
 import java.util.Locale;
 
 public class MysqlSqlBuilder extends AbstractSqlBuilder {
+    @Autowired
+    FuncVOMapper funcVOMapper;
+
 
     private HashMap<String, Field> fieldMap;
+
+    @Override
+    public String getQuerySql(QueryVO vo) {
+        String QuerySql = "";
+
+        if (vo != null) {
+            String funcCode = vo.getFuncCode();
+            String where = vo.getWhere();
+            String groupBy = vo.getGroupBy();
+            String orderBy = vo.getOrderBy();
+            boolean funcWhereVaild = vo.getFuncWhereVaild();
+            String field = "*";
+
+            if (funcCode != null && funcCode.length() > 0) {
+                FuncVO funcVO = funcVOMapper.selectByCode(funcCode);
+                String tableName = funcVO.getTableName();
+                String funcWhere = "";
+                if (funcWhereVaild) {
+                    funcWhere = funcVO.getFuncWhere();
+                }
+                if (tableName != null && tableName.length() > 0) {
+                    QuerySql = DbConstant.SQL_SELECT.replace(DbConstant.ARG_TABLENAME, tableName);
+
+                    if(where!=null){
+
+                    }
+
+
+                    if (groupBy != null && groupBy.length() > 0) {
+                        field = groupBy;
+                        QuerySql = QuerySql.replace(DbConstant.ARG_GROUPBY, DbConstant.KEY_GROUPBY + groupBy);
+                    }
+                    QuerySql = QuerySql.replace(DbConstant.ARG_FIELD, field);
+
+                    if (orderBy != null && orderBy.length() > 0) {
+                        QuerySql = QuerySql.replace(DbConstant.ARG_ORDERBY, DbConstant.KEY_ORDERBY + orderBy);
+                    }
+                }
+            }
+        }
+        return QuerySql;
+    }
 
     /**
      * 创建数据库脚本
@@ -27,8 +78,6 @@ public class MysqlSqlBuilder extends AbstractSqlBuilder {
     @Override
     public List<String> getCreateSql(HashMap<String, ClassInfo> classInfoMap) {
         List<String> createSqlList = new ArrayList<String>();
-
-
         //遍历vomap
         for (String className : classInfoMap.keySet()) {
             ClassInfo classInfo = classInfoMap.get(className);
@@ -51,7 +100,7 @@ public class MysqlSqlBuilder extends AbstractSqlBuilder {
                             String fieldLenght = ((PeaceField) peaceField).lenght();
                             //字段类型
                             String fieldType = ((PeaceField) peaceField).type().toUpperCase(Locale.ROOT);
-                            String fieldNameUp=fieldName.toUpperCase(Locale.ROOT);
+                            String fieldNameUp = fieldName.toUpperCase(Locale.ROOT);
                             fieldBf.append(fieldNameUp)
                                     .append(DbConstant.SIGN_BLANK)
                                     .append(fieldType)
@@ -73,7 +122,7 @@ public class MysqlSqlBuilder extends AbstractSqlBuilder {
 
                 if (fieldBf.length() > 0) {
                     fieldBf.deleteCharAt(fieldBf.length() - 1);
-                    createSqlList.add(DbConstant.CREATESQL
+                    createSqlList.add(DbConstant.SQL_CREATE
                             .replace(DbConstant.ARG_TABLENAME, tableName)
                             .replace(DbConstant.ARG_FIELDNAME, fieldBf.toString()));
                 }

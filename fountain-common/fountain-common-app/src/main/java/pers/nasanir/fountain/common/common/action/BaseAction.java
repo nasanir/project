@@ -1,13 +1,12 @@
-package pers.nasanir.fountain.manager.function.action;
+package pers.nasanir.fountain.common.common.action;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import pers.nasanir.fountain.common.common.entity.ResultVO;
-import pers.nasanir.fountain.manager.function.itf.IAction;
-import pers.nasanir.fountain.manager.function.mapper.FuncVOMapper;
+import pers.nasanir.fountain.common.common.itf.IAction;
+import pers.nasanir.fountain.common.common.mapper.FuncVOMapper;
 
 public class BaseAction implements IAction {
-    @Autowired
-    FuncVOMapper funcVOMapper;
+
 
     @Override
     public ResultVO add() {
@@ -34,5 +33,4 @@ public class BaseAction implements IAction {
         return null;
     }
 
-    private
 }
