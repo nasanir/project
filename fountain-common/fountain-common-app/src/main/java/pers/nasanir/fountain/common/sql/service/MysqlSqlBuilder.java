@@ -43,16 +43,28 @@ public class MysqlSqlBuilder extends AbstractSqlBuilder {
                 FuncVO funcVO = funcVOMapper.selectByCode(funcCode);
                 String tableName = funcVO.getTableName();
                 String funcWhere = "";
+                String whereClause="";
                 if (funcWhereVaild) {
-                    funcWhere = funcVO.getFuncWhere();
+                    funcWhere = funcVO.getFuncWhere()!=null?funcVO.getFuncWhere():"";
                 }
                 if (tableName != null && tableName.length() > 0) {
                     QuerySql = DbConstant.SQL_SELECT.replace(DbConstant.ARG_TABLENAME, tableName);
 
-                    if(where!=null){
-
+                    if(where!=null&&where.length()>0){
+                        whereClause=where;
                     }
 
+                    if(whereClause.length()>0&&funcWhere.length()>0){
+                        whereClause=DbConstant.KEY_AND+funcWhere;
+                    }else if(funcWhere.length()>0){
+                        whereClause=funcWhere;
+                    }
+
+                    if(whereClause.length()>0){
+                        whereClause=DbConstant.KEY_WHERE+whereClause;
+                    }
+
+                    QuerySql=QuerySql.replace(DbConstant.ARG_WHERE,whereClause);
 
                     if (groupBy != null && groupBy.length() > 0) {
                         field = groupBy;
