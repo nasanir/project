@@ -1,17 +1,17 @@
 package pers.nasanir.fountain.common.sql.service;
 
-
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import pers.nasanir.fountain.common.common.anno.PeaceField;
 import pers.nasanir.fountain.common.common.anno.PeaceTable;
-import pers.nasanir.fountain.common.common.entity.AbstractVO;
-import pers.nasanir.fountain.common.common.entity.FuncVO;
-import pers.nasanir.fountain.common.common.entity.QueryVO;
+import pers.nasanir.fountain.common.common.constant.CommonConstant;
+import pers.nasanir.fountain.common.common.entity.*;
+import pers.nasanir.fountain.common.common.mapper.FieldVOMapper;
 import pers.nasanir.fountain.common.common.mapper.FuncVOMapper;
+import pers.nasanir.fountain.common.common.utils.SpringUtils;
 import pers.nasanir.fountain.common.reflect.ClassInfo;
 import pers.nasanir.fountain.common.sql.abst.AbstractSqlBuilder;
 import pers.nasanir.fountain.common.sql.constant.DbConstant;
-import pers.nasanir.fountain.common.sql.entity.SqlVO;
+import pers.nasanir.fountain.common.sql.constant.TypeEnum;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -20,16 +20,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 
-public class MysqlSqlBuilder extends AbstractSqlBuilder {
-    @Autowired
-    FuncVOMapper funcVOMapper;
 
+public class MysqlSqlBuilder extends AbstractSqlBuilder {
+    private ApplicationContext applicationContext = SpringUtils.getApplicationContext();
+
+    private FuncVOMapper funcVOMapper = applicationContext.getBean(FuncVOMapper.class);
+    private FieldVOMapper fieldVOMapper = applicationContext.getBean(FieldVOMapper.class);
 
     private HashMap<String, Field> fieldMap;
 
     @Override
     public String getQuerySql(QueryVO vo) {
-        String QuerySql = "";
+        String querySql = "";
 
         if (vo != null) {
             String funcCode = vo.getFuncCode();
@@ -43,43 +45,76 @@ public class MysqlSqlBuilder extends AbstractSqlBuilder {
                 FuncVO funcVO = funcVOMapper.selectByCode(funcCode);
                 String tableName = funcVO.getTableName();
                 String funcWhere = "";
-                String whereClause="";
+                String whereClause = "";
                 if (funcWhereVaild) {
-                    funcWhere = funcVO.getFuncWhere()!=null?funcVO.getFuncWhere():"";
+                    funcWhere = funcVO.getFuncWhere() != null ? funcVO.getFuncWhere() : "";
                 }
                 if (tableName != null && tableName.length() > 0) {
-                    QuerySql = DbConstant.SQL_SELECT.replace(DbConstant.ARG_TABLENAME, tableName);
+                    querySql = DbConstant.SQL_SELECT.replace(DbConstant.ARG_TABLENAME, tableName);
 
-                    if(where!=null&&where.length()>0){
-                        whereClause=where;
+                    if (where != null && where.length() > 0) {
+                        whereClause = where;
                     }
 
-                    if(whereClause.length()>0&&funcWhere.length()>0){
-                        whereClause=DbConstant.KEY_AND+funcWhere;
-                    }else if(funcWhere.length()>0){
-                        whereClause=funcWhere;
+                    if (whereClause.length() > 0 && funcWhere.length() > 0) {
+                        whereClause = DbConstant.KEY_AND + funcWhere;
+                    } else if (funcWhere.length() > 0) {
+                        whereClause = funcWhere;
                     }
 
-                    if(whereClause.length()>0){
-                        whereClause=DbConstant.KEY_WHERE+whereClause;
+                    if (whereClause.length() > 0) {
+                        whereClause = DbConstant.KEY_WHERE + whereClause;
                     }
 
-                    QuerySql=QuerySql.replace(DbConstant.ARG_WHERE,whereClause);
+                    querySql = querySql.replace(DbConstant.ARG_WHERE, whereClause);
 
                     if (groupBy != null && groupBy.length() > 0) {
                         field = groupBy;
-                        QuerySql = QuerySql.replace(DbConstant.ARG_GROUPBY, DbConstant.KEY_GROUPBY + groupBy);
+                        querySql = querySql.replace(DbConstant.ARG_GROUPBY, DbConstant.KEY_GROUPBY + groupBy);
+                    } else {
+                        querySql = querySql.replace(DbConstant.ARG_GROUPBY, "");
                     }
-                    QuerySql = QuerySql.replace(DbConstant.ARG_FIELD, field);
+                    querySql = querySql.replace(DbConstant.ARG_FIELD, field);
 
                     if (orderBy != null && orderBy.length() > 0) {
-                        QuerySql = QuerySql.replace(DbConstant.ARG_ORDERBY, DbConstant.KEY_ORDERBY + orderBy);
+                        querySql = querySql.replace(DbConstant.ARG_ORDERBY, DbConstant.KEY_ORDERBY + orderBy);
+                    } else {
+                        querySql = querySql.replace(DbConstant.ARG_ORDERBY, "");
                     }
                 }
             }
         }
-        return QuerySql;
+        return querySql;
     }
+
+    @Override
+    public String getInsertSql(DataVO vo) {
+        String insertSql = "";
+        String funcCode = vo.getFunction();
+        VOSet<AbstractVO> voSet = vo.getDataSet();
+        if (funcCode != null && funcCode.length() > 0) {
+            FuncVO funcVO = funcVOMapper.selectByCode(funcCode);
+            List<FieldVO> fieldList = fieldVOMapper.selectByCode(funcCode);
+            StringBuffer fieldBf = new StringBuffer();
+            for (FieldVO fieldVO : fieldList) {
+                fieldBf.append(DbConstant.SIGN_COMMA).append(DbConstant.SIGN_SIGQUOT)
+                        .append(fieldVO.getFieldCode()).append(DbConstant.SIGN_SIGQUOT);
+            }
+            if (fieldBf.length() > 0) {
+                String fieldAll = fieldBf.toString().substring(CommonConstant.STR_SUBFIRST);
+                for (AbstractVO dataVo : voSet.getVoList()) {
+                    for (FieldVO fieldVO : fieldList) {
+                        Object value=dataVo.getValue(fieldToVo(fieldVO.getFieldCode()));
+                    }
+                }
+
+            }
+        }
+        return null;
+    }
+
+
+
 
     /**
      * 创建数据库脚本
@@ -142,5 +177,15 @@ public class MysqlSqlBuilder extends AbstractSqlBuilder {
             }
         }
         return createSqlList;
+    }
+
+    public String typeDbToJ(Object value,String type){
+        if(type.equalsIgnoreCase(TypeEnum.MYSQLBIT.getType())){
+            if(String.valueOf())
+        }else if(type.equalsIgnoreCase(TypeEnum.MYSQLDATETIME)){
+
+        }else{
+            return String.valueOf(value);
+        }
     }
 }

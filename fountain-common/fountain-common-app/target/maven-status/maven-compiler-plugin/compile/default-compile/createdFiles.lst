@@ -20,6 +20,7 @@ pers\nasanir\fountain\common\common\constant\CommonConstant.class
 pers\nasanir\fountain\common\db\impl\IJdbcBaseService.class
 pers\nasanir\fountain\common\crypto\encoder\Hex256Encoder.class
 pers\nasanir\fountain\common\shiro\conf\ShiroConfig.class
+pers\nasanir\fountain\common\common\utils\SpringUtils.class
 pers\nasanir\fountain\common\common\entity\ResultVO.class
 pers\nasanir\fountain\common\reflect\MethodInvoker.class
 pers\nasanir\fountain\common\common\entity\DataVO.class

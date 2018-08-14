@@ -12,6 +12,10 @@ public class FieldVO implements Serializable {
 
     private String fieldName;
 
+    private String fieldType;
+
+    private Integer fieldLen;
+
     private Integer fieldOrder;
 
     private Boolean isvaild;
@@ -58,6 +62,22 @@ public class FieldVO implements Serializable {
 
     public void setFieldName(String fieldName) {
         this.fieldName = fieldName == null ? null : fieldName.trim();
+    }
+
+    public String getFieldType() {
+        return fieldType;
+    }
+
+    public void setFieldType(String fieldType) {
+        this.fieldType = fieldType == null ? null : fieldType.trim();
+    }
+
+    public Integer getFieldLen() {
+        return fieldLen;
+    }
+
+    public void setFieldLen(Integer fieldLen) {
+        this.fieldLen = fieldLen;
     }
 
     public Integer getFieldOrder() {
