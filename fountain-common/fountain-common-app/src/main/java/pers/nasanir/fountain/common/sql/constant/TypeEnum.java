@@ -1,11 +1,13 @@
 package pers.nasanir.fountain.common.sql.constant;
 
 public enum TypeEnum {
-    MYSQLVACHAR("VACHAR"),
-    MYSQLDATETIME("DATETIME"),
-    MYSQLBIGINT("BIGINT"),
-    MYSQLINT("INT"),
-    MYSQLBIT("BIT")
+    MYSQL_VACHAR("VACHAR"),
+    MYSQL_DATETIME("DATETIME"),
+    MYSQL_BIGINT("BIGINT"),
+    MYSQL_INT("INT"),
+    MYSQL_BIT("BIT"),
+    MYSQL_FALSE("0"),
+    MYSQL_TRUE("1")
     ;
 
 

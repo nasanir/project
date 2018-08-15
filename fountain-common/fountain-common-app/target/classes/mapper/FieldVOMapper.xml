@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="pers.nasanir.fountain.common.common.entity.FieldVOMapper">
-  <resultMap id="BaseResultMap" type="pers.nasanir.fountain.common.common.entity.FieldVO">
+<mapper namespace="pers.nasanir.fountain.common.function.mapper.FieldVOMapper">
+  <resultMap id="BaseResultMap" type="pers.nasanir.fountain.common.function.entity.FieldVO">
     <id column="FIELD_ID" jdbcType="BIGINT" property="fieldId" />
     <result column="FUNCTION_CODE" jdbcType="VARCHAR" property="functionCode" />
     <result column="FIELD_CODE" jdbcType="VARCHAR" property="fieldCode" />
     <result column="FIELD_NAME" jdbcType="VARCHAR" property="fieldName" />
+    <result column="FIELD_TYPE" jdbcType="VARCHAR" property="fieldType" />
+    <result column="FIELD_LEN" jdbcType="INTEGER" property="fieldLen" />
     <result column="FIELD_ORDER" jdbcType="INTEGER" property="fieldOrder" />
     <result column="ISVAILD" jdbcType="BIT" property="isvaild" />
     <result column="DESCRIPTION" jdbcType="VARCHAR" property="description" />
@@ -15,11 +17,11 @@
     <result column="CHANGE_BY" jdbcType="VARCHAR" property="changeBy" />
   </resultMap>
   <sql id="Base_Column_List">
-    FIELD_ID, FUNCTION_CODE, FIELD_CODE, FIELD_NAME, FIELD_ORDER, ISVAILD, DESCRIPTION, 
-    CREATED_DT, CREATED_BY, CHANGE_DT, CHANGE_BY
+    FIELD_ID, FUNCTION_CODE, FIELD_CODE, FIELD_NAME, FIELD_TYPE, FIELD_LEN, FIELD_ORDER, 
+    ISVAILD, DESCRIPTION, CREATED_DT, CREATED_BY, CHANGE_DT, CHANGE_BY
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select
+    select 
     <include refid="Base_Column_List" />
     from fountain_manager_field
     where FIELD_ID = #{fieldId,jdbcType=BIGINT}
@@ -31,23 +33,23 @@
     from fountain_manager_field
     where FUNCTION_CODE = #{functionCode,jdbcType=VARCHAR}
   </select>
-
-
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from fountain_manager_field
     where FIELD_ID = #{fieldId,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="pers.nasanir.fountain.common.common.entity.FieldVO">
+  <insert id="insert" parameterType="pers.nasanir.fountain.common.function.entity.FieldVO">
     insert into fountain_manager_field (FIELD_ID, FUNCTION_CODE, FIELD_CODE, 
-      FIELD_NAME, FIELD_ORDER, ISVAILD, 
-      DESCRIPTION, CREATED_DT, CREATED_BY, 
-      CHANGE_DT, CHANGE_BY)
+      FIELD_NAME, FIELD_TYPE, FIELD_LEN, 
+      FIELD_ORDER, ISVAILD, DESCRIPTION, 
+      CREATED_DT, CREATED_BY, CHANGE_DT, 
+      CHANGE_BY)
     values (#{fieldId,jdbcType=BIGINT}, #{functionCode,jdbcType=VARCHAR}, #{fieldCode,jdbcType=VARCHAR}, 
-      #{fieldName,jdbcType=VARCHAR}, #{fieldOrder,jdbcType=INTEGER}, #{isvaild,jdbcType=BIT}, 
-      #{description,jdbcType=VARCHAR}, #{createdDt,jdbcType=TIMESTAMP}, #{createdBy,jdbcType=VARCHAR}, 
-      #{changeDt,jdbcType=TIMESTAMP}, #{changeBy,jdbcType=VARCHAR})
+      #{fieldName,jdbcType=VARCHAR}, #{fieldType,jdbcType=VARCHAR}, #{fieldLen,jdbcType=INTEGER}, 
+      #{fieldOrder,jdbcType=INTEGER}, #{isvaild,jdbcType=BIT}, #{description,jdbcType=VARCHAR}, 
+      #{createdDt,jdbcType=TIMESTAMP}, #{createdBy,jdbcType=VARCHAR}, #{changeDt,jdbcType=TIMESTAMP}, 
+      #{changeBy,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="pers.nasanir.fountain.common.common.entity.FieldVO">
+  <insert id="insertSelective" parameterType="pers.nasanir.fountain.common.function.entity.FieldVO">
     insert into fountain_manager_field
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="fieldId != null">
@@ -61,6 +63,12 @@
       </if>
       <if test="fieldName != null">
         FIELD_NAME,
+      </if>
+      <if test="fieldType != null">
+        FIELD_TYPE,
+      </if>
+      <if test="fieldLen != null">
+        FIELD_LEN,
       </if>
       <if test="fieldOrder != null">
         FIELD_ORDER,
@@ -97,6 +105,12 @@
       <if test="fieldName != null">
         #{fieldName,jdbcType=VARCHAR},
       </if>
+      <if test="fieldType != null">
+        #{fieldType,jdbcType=VARCHAR},
+      </if>
+      <if test="fieldLen != null">
+        #{fieldLen,jdbcType=INTEGER},
+      </if>
       <if test="fieldOrder != null">
         #{fieldOrder,jdbcType=INTEGER},
       </if>
@@ -120,7 +134,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="pers.nasanir.fountain.common.common.entity.FieldVO">
+  <update id="updateByPrimaryKeySelective" parameterType="pers.nasanir.fountain.common.function.entity.FieldVO">
     update fountain_manager_field
     <set>
       <if test="functionCode != null">
@@ -131,6 +145,12 @@
       </if>
       <if test="fieldName != null">
         FIELD_NAME = #{fieldName,jdbcType=VARCHAR},
+      </if>
+      <if test="fieldType != null">
+        FIELD_TYPE = #{fieldType,jdbcType=VARCHAR},
+      </if>
+      <if test="fieldLen != null">
+        FIELD_LEN = #{fieldLen,jdbcType=INTEGER},
       </if>
       <if test="fieldOrder != null">
         FIELD_ORDER = #{fieldOrder,jdbcType=INTEGER},
@@ -156,11 +176,13 @@
     </set>
     where FIELD_ID = #{fieldId,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="pers.nasanir.fountain.common.common.entity.FieldVO">
+  <update id="updateByPrimaryKey" parameterType="pers.nasanir.fountain.common.function.entity.FieldVO">
     update fountain_manager_field
     set FUNCTION_CODE = #{functionCode,jdbcType=VARCHAR},
       FIELD_CODE = #{fieldCode,jdbcType=VARCHAR},
       FIELD_NAME = #{fieldName,jdbcType=VARCHAR},
+      FIELD_TYPE = #{fieldType,jdbcType=VARCHAR},
+      FIELD_LEN = #{fieldLen,jdbcType=INTEGER},
       FIELD_ORDER = #{fieldOrder,jdbcType=INTEGER},
       ISVAILD = #{isvaild,jdbcType=BIT},
       DESCRIPTION = #{description,jdbcType=VARCHAR},

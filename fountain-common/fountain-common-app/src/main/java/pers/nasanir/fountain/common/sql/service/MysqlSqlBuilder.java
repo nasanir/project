@@ -5,8 +5,10 @@ import pers.nasanir.fountain.common.common.anno.PeaceField;
 import pers.nasanir.fountain.common.common.anno.PeaceTable;
 import pers.nasanir.fountain.common.common.constant.CommonConstant;
 import pers.nasanir.fountain.common.common.entity.*;
-import pers.nasanir.fountain.common.common.mapper.FieldVOMapper;
-import pers.nasanir.fountain.common.common.mapper.FuncVOMapper;
+import pers.nasanir.fountain.common.function.entity.FieldVO;
+import pers.nasanir.fountain.common.function.entity.FuncVO;
+import pers.nasanir.fountain.common.function.mapper.FieldVOMapper;
+import pers.nasanir.fountain.common.function.mapper.FuncVOMapper;
 import pers.nasanir.fountain.common.common.utils.SpringUtils;
 import pers.nasanir.fountain.common.reflect.ClassInfo;
 import pers.nasanir.fountain.common.sql.abst.AbstractSqlBuilder;
@@ -15,10 +17,8 @@ import pers.nasanir.fountain.common.sql.constant.TypeEnum;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 
 public class MysqlSqlBuilder extends AbstractSqlBuilder {
@@ -93,27 +93,49 @@ public class MysqlSqlBuilder extends AbstractSqlBuilder {
         String funcCode = vo.getFunction();
         VOSet<AbstractVO> voSet = vo.getDataSet();
         if (funcCode != null && funcCode.length() > 0) {
-            FuncVO funcVO = funcVOMapper.selectByCode(funcCode);
-            List<FieldVO> fieldList = fieldVOMapper.selectByCode(funcCode);
-            StringBuffer fieldBf = new StringBuffer();
-            for (FieldVO fieldVO : fieldList) {
-                fieldBf.append(DbConstant.SIGN_COMMA).append(DbConstant.SIGN_SIGQUOT)
-                        .append(fieldVO.getFieldCode()).append(DbConstant.SIGN_SIGQUOT);
-            }
-            if (fieldBf.length() > 0) {
-                String fieldAll = fieldBf.toString().substring(CommonConstant.STR_SUBFIRST);
-                for (AbstractVO dataVo : voSet.getVoList()) {
-                    for (FieldVO fieldVO : fieldList) {
-                        Object value=dataVo.getValue(fieldToVo(fieldVO.getFieldCode()));
-                    }
-                }
 
+            FuncVO funcVO = funcVOMapper.selectByCode(funcCode);
+            if (funcVO.getIsvaild()) {
+                String tableName = funcVO.getTableName();
+                List<FieldVO> fieldList = fieldVOMapper.selectByCode(funcCode);
+                StringBuffer fieldBf = new StringBuffer();
+                StringBuffer valueBf = new StringBuffer();
+
+                for (FieldVO fieldVO : fieldList) {
+                    fieldBf.append(DbConstant.SIGN_COMMA).append(DbConstant.SIGN_BACKQUOT)
+                            .append(fieldVO.getFieldCode()).append(DbConstant.SIGN_BACKQUOT);
+                }
+                if (fieldBf.length() > 0) {
+                    String fieldAll = fieldBf.toString().substring(CommonConstant.STR_SUBFIRST);
+
+                    for (AbstractVO dataVo : voSet.getVoList()) {
+                        String partValue = "";
+                        StringBuffer partValueBf = new StringBuffer();
+                        for (FieldVO fieldVO : fieldList) {
+                            if (fieldVO.getIsvaild()) {
+                                String type = fieldVO.getFieldType();
+                                Object value = dataVo.getValue(fieldToVo(fieldVO.getFieldCode()));
+                                partValueBf.append(DbConstant.SIGN_COMMA)
+                                        .append(typeDbToJ(value, type));
+                            }
+                        }
+
+                        if (valueBf.length() > 0) {
+                            partValue = DbConstant.SIGN_COMMA + DbConstant.SIGN_LEFT_BRACKET
+                                    + partValueBf.toString().substring(CommonConstant.STR_SUBFIRST) + DbConstant.SIGN_RIGHT_BRACKET;
+                        } else {
+                            partValue = DbConstant.SIGN_LEFT_BRACKET
+                                    + partValueBf.toString().substring(CommonConstant.STR_SUBFIRST) + DbConstant.SIGN_RIGHT_BRACKET;
+                        }
+                        valueBf.append(partValue);
+                    }
+                    insertSql = DbConstant.SQL_INSERT.replace(DbConstant.ARG_TABLENAME, tableName)
+                            .replace(DbConstant.ARG_FIELDALL, fieldAll).replace(DbConstant.ARG_VALUES, valueBf.toString());
+                }
             }
         }
-        return null;
+        return insertSql;
     }
-
-
 
 
     /**
@@ -179,13 +201,23 @@ public class MysqlSqlBuilder extends AbstractSqlBuilder {
         return createSqlList;
     }
 
-    public String typeDbToJ(Object value,String type){
-        if(type.equalsIgnoreCase(TypeEnum.MYSQLBIT.getType())){
-            if(String.valueOf())
-        }else if(type.equalsIgnoreCase(TypeEnum.MYSQLDATETIME)){
-
-        }else{
-            return String.valueOf(value);
+    public String typeDbToJ(Object value, String type) {
+        if (value != null) {
+            if (type.equalsIgnoreCase(TypeEnum.MYSQL_BIT.getType())) {
+                if (String.valueOf(value).equalsIgnoreCase(CommonConstant.STR_FALSE)) {
+                    return (DbConstant.SIGN_BIT+DbConstant.SIGN_SIGQUOT+TypeEnum.MYSQL_FALSE.getType()+DbConstant.SIGN_SIGQUOT).replace(" ","");
+                } else {
+                    return (DbConstant.SIGN_BIT+DbConstant.SIGN_SIGQUOT+TypeEnum.MYSQL_TRUE.getType()+DbConstant.SIGN_SIGQUOT).replace(" ","");
+                }
+            } else if (type.equalsIgnoreCase(TypeEnum.MYSQL_DATETIME.getType())) {
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                String dateValue = simpleDateFormat.format(value);
+                return DbConstant.SIGN_SIGQUOT+dateValue+DbConstant.SIGN_SIGQUOT;
+            } else {
+                return DbConstant.SIGN_SIGQUOT+String.valueOf(value)+DbConstant.SIGN_SIGQUOT;
+            }
+        } else {
+            return "NULL";
         }
     }
 }

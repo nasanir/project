@@ -1,22 +1,23 @@
-package pers.nasanir.fountain.common.common.entity;
+package pers.nasanir.fountain.common.function.entity;
 
-import java.io.Serializable;
+import pers.nasanir.fountain.common.common.entity.BaseVO;
+
 import java.util.Date;
 
-public class FuncVO implements Serializable {
-    private Long functionId;
-
-    private String tableName;
+public class FieldVO extends BaseVO {
+    private Long fieldId;
 
     private String functionCode;
 
-    private String functionName;
+    private String fieldCode;
 
-    private String functionEntity;
+    private String fieldName;
 
-    private String funcWhere;
+    private String fieldType;
 
-    private String orderBy;
+    private Integer fieldLen;
+
+    private Integer fieldOrder;
 
     private Boolean isvaild;
 
@@ -32,20 +33,12 @@ public class FuncVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    public Long getFunctionId() {
-        return functionId;
+    public Long getFieldId() {
+        return fieldId;
     }
 
-    public void setFunctionId(Long functionId) {
-        this.functionId = functionId;
-    }
-
-    public String getTableName() {
-        return tableName;
-    }
-
-    public void setTableName(String tableName) {
-        this.tableName = tableName == null ? null : tableName.trim();
+    public void setFieldId(Long fieldId) {
+        this.fieldId = fieldId;
     }
 
     public String getFunctionCode() {
@@ -56,36 +49,44 @@ public class FuncVO implements Serializable {
         this.functionCode = functionCode == null ? null : functionCode.trim();
     }
 
-    public String getFunctionName() {
-        return functionName;
+    public String getFieldCode() {
+        return fieldCode;
     }
 
-    public void setFunctionName(String functionName) {
-        this.functionName = functionName == null ? null : functionName.trim();
+    public void setFieldCode(String fieldCode) {
+        this.fieldCode = fieldCode == null ? null : fieldCode.trim();
     }
 
-    public String getFunctionEntity() {
-        return functionEntity;
+    public String getFieldName() {
+        return fieldName;
     }
 
-    public void setFunctionEntity(String functionEntity) {
-        this.functionEntity = functionEntity == null ? null : functionEntity.trim();
+    public void setFieldName(String fieldName) {
+        this.fieldName = fieldName == null ? null : fieldName.trim();
     }
 
-    public String getFuncWhere() {
-        return funcWhere;
+    public String getFieldType() {
+        return fieldType;
     }
 
-    public void setFuncWhere(String funcWhere) {
-        this.funcWhere = funcWhere == null ? null : funcWhere.trim();
+    public void setFieldType(String fieldType) {
+        this.fieldType = fieldType == null ? null : fieldType.trim();
     }
 
-    public String getOrderBy() {
-        return orderBy;
+    public Integer getFieldLen() {
+        return fieldLen;
     }
 
-    public void setOrderBy(String orderBy) {
-        this.orderBy = orderBy == null ? null : orderBy.trim();
+    public void setFieldLen(Integer fieldLen) {
+        this.fieldLen = fieldLen;
+    }
+
+    public Integer getFieldOrder() {
+        return fieldOrder;
+    }
+
+    public void setFieldOrder(Integer fieldOrder) {
+        this.fieldOrder = fieldOrder;
     }
 
     public Boolean getIsvaild() {

@@ -1,7 +1,8 @@
-package pers.nasanir.fountain.common.common.mapper;
+package pers.nasanir.fountain.common.function.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
-import pers.nasanir.fountain.common.common.entity.FuncVO;
+import pers.nasanir.fountain.common.function.entity.FuncVO;
+
 @Mapper
 public interface FuncVOMapper {
     int deleteByPrimaryKey(Long functionId);

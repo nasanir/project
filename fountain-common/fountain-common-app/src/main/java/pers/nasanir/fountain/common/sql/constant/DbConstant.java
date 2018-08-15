@@ -22,6 +22,8 @@ public class DbConstant {
 	public static final String SIGN_SEMICOLON=";";
 	public static final String SIGN_SIGQUOT="'";
 	public static final String SIGN_UNDERLINE="_";
+	public static final String SIGN_BIT="b";
+	public static final String SIGN_BACKQUOT="`";
 
 	public static final String KEY_NOTNUL="NOT NULL";
 	public static final String KEY_PRIMARY="PRIMARY KEY";
@@ -29,6 +31,8 @@ public class DbConstant {
 	public static final String KEY_ORDERBY="ORDER BY ";
 	public static final String KEY_WHERE="WHERE ";
 	public static final String KEY_AND=" AND ";
+
+
 
 	public static final int LEN_SELECT=16;
 }

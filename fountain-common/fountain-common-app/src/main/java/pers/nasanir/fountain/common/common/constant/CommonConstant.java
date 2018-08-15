@@ -7,4 +7,7 @@ public class CommonConstant {
 	public static final String YMDHIS="YYYY-MM-dd HH24:mi:ss";
 
 	public static final int STR_SUBFIRST=1;
+
+	public static final String STR_FALSE="FALSE";
+	public static final String STR_TRUE="TRUE";
 }	

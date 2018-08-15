@@ -1,9 +1,9 @@
 package pers.nasanir.fountain.common.common.entity;
 
-public class DataVO extends BaseVO{
+public class DataVO<T extends AbstractVO> extends BaseVO{
     private String module;
     private String function;
-    private VOSet<AbstractVO> dataSet;
+    private VOSet<T> dataSet;
     private String action;
 
     public String getModule() {
@@ -22,11 +22,11 @@ public class DataVO extends BaseVO{
         this.function = function;
     }
 
-    public VOSet<AbstractVO> getDataSet() {
+    public VOSet<T> getDataSet() {
         return dataSet;
     }
 
-    public void setDataSet(VOSet<AbstractVO> dataSet) {
+    public void setDataSet(VOSet<T> dataSet) {
         this.dataSet = dataSet;
     }
 

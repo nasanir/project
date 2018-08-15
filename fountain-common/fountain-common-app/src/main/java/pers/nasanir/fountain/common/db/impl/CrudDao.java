@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.InsertProvider;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.SelectProvider;
 import pers.nasanir.fountain.common.common.entity.AbstractVO;
+import pers.nasanir.fountain.common.common.entity.DataVO;
 import pers.nasanir.fountain.common.common.entity.QueryVO;
 import pers.nasanir.fountain.common.db.provider.BaseProvider;
 
@@ -15,6 +16,6 @@ public interface CrudDao {
     @SelectProvider(type = BaseProvider.class, method = "query")
     public List<HashMap<String, Object>> query(QueryVO vo);
 
-    @InsertProvider(type = BaseProvider.class,method ="insert")
-    public void add(AbstractVO vo,String func);
+    @InsertProvider(type = BaseProvider.class,method ="add")
+    public void add(DataVO vo);
 }

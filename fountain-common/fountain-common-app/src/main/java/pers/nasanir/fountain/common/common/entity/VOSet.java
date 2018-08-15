@@ -1,10 +1,11 @@
 package pers.nasanir.fountain.common.common.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class VOSet<T extends AbstractVO> {
 	private String sql = null;
-	private List<T> voList = null;
+	private List<T> voList = new ArrayList<>();
 
 	public boolean isEmpty() {
 		if (voList.isEmpty() || voList == null) {
@@ -35,5 +36,9 @@ public class VOSet<T extends AbstractVO> {
 
 	public void setVoList(List<T> voList) {
 		this.voList = voList;
+	}
+
+	public void addVo(T vo){
+		this.voList.add(vo);
 	}
 }

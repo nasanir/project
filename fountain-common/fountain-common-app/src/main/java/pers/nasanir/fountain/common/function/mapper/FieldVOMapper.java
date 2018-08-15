@@ -1,6 +1,6 @@
-package pers.nasanir.fountain.common.common.mapper;
+package pers.nasanir.fountain.common.function.mapper;
 
-import pers.nasanir.fountain.common.common.entity.FieldVO;
+import pers.nasanir.fountain.common.function.entity.FieldVO;
 
 import java.util.List;
 
