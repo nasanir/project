@@ -1,6 +1,7 @@
 package pers.nasanir.fountain.common.db.orm;
 
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import pers.nasanir.fountain.common.common.entity.AbstractVO;
@@ -22,9 +23,8 @@ public class JdbcBaseDao {
 	@Autowired
 	private CrudDao crudDao;
 
-	public List<HashMap<String, Object>> query(QueryVO vo,int pageNo,int pageSize) {
+	public List query(QueryVO vo) {
 		// TODO Auto-generated method stub
-		PageHelper.startPage(pageNo,pageSize);
 		List<HashMap<String, Object>> valueList = crudDao.query(vo);
 		return valueList;
 	}

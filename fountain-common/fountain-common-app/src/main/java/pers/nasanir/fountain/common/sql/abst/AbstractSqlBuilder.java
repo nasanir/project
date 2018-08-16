@@ -18,8 +18,8 @@ public abstract class AbstractSqlBuilder implements ISqlbuilder {
 	@Override
 	public abstract String getInsertSql(DataVO vo);
 
-	@Override
-	public abstract List<String> getCreateSql(HashMap<String,ClassInfo> classInfoMap);
+//	@Override
+//	public abstract List<String> getCreateSql(HashMap<String,ClassInfo> classInfoMap);
 
 	public String fieldToVo(String field) {
 		String[] voFieldArr=field.split(DbConstant.SIGN_UNDERLINE);

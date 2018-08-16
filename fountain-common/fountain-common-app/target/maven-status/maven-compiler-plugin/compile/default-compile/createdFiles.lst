@@ -39,6 +39,7 @@ pers\nasanir\fountain\common\login\ctrl\LoginController.class
 pers\nasanir\fountain\common\sql\factroy\SqlManager.class
 pers\nasanir\fountain\common\sql\itf\ISqlbuilder.class
 pers\nasanir\fountain\common\function\mapper\FieldVOMapper.class
+pers\nasanir\fountain\common\common\conf\MybatisConf.class
 pers\nasanir\fountain\common\reflect\ClassInfo.class
 pers\nasanir\fountain\common\reflect\ClassUtils.class
 pers\nasanir\fountain\common\db\service\JdbcBaseServiceImpl.class
@@ -51,3 +52,4 @@ pers\nasanir\fountain\common\sql\service\MysqlSqlBuilder.class
 pers\nasanir\fountain\common\common\anno\PeaceField.class
 pers\nasanir\fountain\common\sql\factroy\SqlFactroy.class
 pers\nasanir\fountain\common\crypto\abst\AbstractEncoder.class
+pers\nasanir\fountain\common\sql\entity\PageInfo.class

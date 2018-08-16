@@ -1,5 +1,6 @@
 package pers.nasanir.fountain.common.db.service;
 
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import pers.nasanir.fountain.common.common.entity.AbstractVO;
@@ -17,9 +18,9 @@ public class JdbcBaseServiceImpl implements IJdbcBaseService {
 	@Autowired
 	private JdbcBaseDao jdbcBaseDao;
 
-	public List<HashMap<String, Object>> query(QueryVO vo, int pageNo, int pageSize) {
+	public List query(QueryVO vo) {
 		// TODO Auto-generated method stub
-		List<HashMap<String, Object>> dataList=  jdbcBaseDao.query(vo,pageNo,pageSize);
+		List dataList=  jdbcBaseDao.query(vo);
 		return dataList;
 	}
 

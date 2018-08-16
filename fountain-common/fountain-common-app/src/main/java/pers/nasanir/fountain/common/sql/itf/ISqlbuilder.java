@@ -14,5 +14,5 @@ public interface ISqlbuilder {
 
 	public String getInsertSql(DataVO vo);
 
-	public List<String> getCreateSql(HashMap<String,ClassInfo> classInfoMap);
+//	public List<String> getCreateSql(HashMap<String,ClassInfo> classInfoMap);
 }
