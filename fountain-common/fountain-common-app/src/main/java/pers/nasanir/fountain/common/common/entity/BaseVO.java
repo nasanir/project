@@ -4,43 +4,43 @@ import java.util.Date;
 
 public class BaseVO extends AbstractVO {
 
-    private Date create_date;
+    private Date createdDt;
 
-    private String create_by;
+    private String createdBy;
 
-    private Date change_date;
+    private Date changeDt;
 
-    private String change_by;
+    private String changeBy;
 
-    public Date getCreate_date() {
-        return create_date;
+    public Date getCreatedDt() {
+        return createdDt;
     }
 
-    public void setCreate_date(Date create_date) {
-        this.create_date = create_date;
+    public void setCreatedDt(Date createdDt) {
+        this.createdDt = createdDt;
     }
 
-    public String getCreate_by() {
-        return create_by;
+    public String getCreatedBy() {
+        return createdBy;
     }
 
-    public void setCreate_by(String create_by) {
-        this.create_by = create_by;
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy == null ? null : createdBy.trim();
     }
 
-    public Date getChange_date() {
-        return change_date;
+    public Date getChangeDt() {
+        return changeDt;
     }
 
-    public void setChange_date(Date change_date) {
-        this.change_date = change_date;
+    public void setChangeDt(Date changeDt) {
+        this.changeDt = changeDt;
     }
 
-    public String getChange_by() {
-        return change_by;
+    public String getChangeBy() {
+        return changeBy;
     }
 
-    public void setChange_by(String change_by) {
-        this.change_by = change_by;
+    public void setChangeBy(String changeBy) {
+        this.changeBy = changeBy == null ? null : changeBy.trim();
     }
 }

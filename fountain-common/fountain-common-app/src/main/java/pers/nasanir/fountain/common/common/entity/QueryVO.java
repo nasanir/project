@@ -3,7 +3,7 @@ package pers.nasanir.fountain.common.common.entity;
 import pers.nasanir.fountain.common.sql.entity.PageInfo;
 
 public class QueryVO extends BaseVO {
-
+    private String module;
     private String funcCode;
     private String where;
     private String groupBy;
@@ -12,7 +12,15 @@ public class QueryVO extends BaseVO {
     private String sql;
     private PageInfo pageInfo;
 
-    public PageInfo createPageInfo(int limit,int pageNo){
+    public String getModule() {
+        return module;
+    }
+
+    public void setModule(String module) {
+        this.module = module;
+    }
+
+    public PageInfo createPageInfo(int limit, int pageNo){
         pageInfo=new PageInfo(limit,pageNo);
         return pageInfo;
     }

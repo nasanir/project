@@ -1,33 +1,46 @@
 package pers.nasanir.fountain.common.function.ctrl;
 
-import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import pers.nasanir.fountain.common.common.entity.QueryVO;
-import pers.nasanir.fountain.common.common.entity.ResultVO;
-import pers.nasanir.fountain.common.db.service.JdbcBaseServiceImpl;
+import pers.nasanir.fountain.common.common.entity.ParamterVO;
+import pers.nasanir.fountain.common.common.entity.VOSet;
+import pers.nasanir.fountain.common.function.itf.IFunctionService;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
 import java.util.List;
 
 
 @RestController
 public class FunctionController {
     @Autowired
-    JdbcBaseServiceImpl jdbcBaseService;
+    IFunctionService functionService;
 
     @RequestMapping(value = "/{module}/{function}/showList",method = RequestMethod.POST)
-    public List showList(HttpServletRequest request, @PathVariable String module, @PathVariable String function){
-        QueryVO vo=new QueryVO();
-        vo.setFuncCode("FUNC");
-        vo.createPageInfo(2,2);
-        return jdbcBaseService.query(vo);
+    public VOSet showList(HttpServletRequest request, @PathVariable String module, @PathVariable String function, int pageNo, int limit){
+        ParamterVO paramterVO=new ParamterVO();
+        paramterVO.setFuncCode(function);
+        paramterVO.setModule(module);
+        paramterVO.setRequest(request);
+        paramterVO.setPageNo(pageNo);
+        paramterVO.setLimit(limit);
+        return functionService.showList(paramterVO);
     }
+
+
+    @RequestMapping(value = "/{module}/{function}/add",method = RequestMethod.POST)
+    public VOSet add(HttpServletRequest request, @PathVariable String module, @PathVariable String function, int pageNo, int limit){
+        ParamterVO paramterVO=new ParamterVO();
+        paramterVO.setFuncCode(function);
+        paramterVO.setModule(module);
+        paramterVO.setRequest(request);
+        paramterVO.setPageNo(pageNo);
+        paramterVO.setLimit(limit);
+        return functionService.showList(paramterVO);
+    }
+
 
 
 }

@@ -15,7 +15,7 @@ import java.util.List;
 public class FuncServiceImpl implements IFuncService {
 
     @Autowired
-    IJdbcBaseService jdbcBaseService;
+    IJdbcBaseService IJdbcBaseService;
 
     @Override
     public AbstractVO add(String module, String function) {
@@ -25,7 +25,7 @@ public class FuncServiceImpl implements IFuncService {
 
         FuncVO funcVo=new FuncVO();
         funcVo.setFunc_code(function);
-        funcVo= (FuncVO) jdbcBaseService.query(funcVo);
+        funcVo= (FuncVO) IJdbcBaseService.query(funcVo);
         voList.add(funcVo);
 
         voSet.setVoList(voList);
