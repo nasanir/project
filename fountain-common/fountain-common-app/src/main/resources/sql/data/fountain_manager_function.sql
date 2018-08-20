@@ -1,0 +1,3 @@
+INSERT INTO `fountain_manager_function` VALUES (1, 'FOUNTAIN_MANAGER_FUNCTION', 'MANAGER_FUNC', '功能', 'pers.nasanir.fountain.common.function.entity.FuncVO', 'FUNCTION_CODE not like  \'%FUNC%\'', NULL, b'1', '功能', '2018-08-14 13:47:42', 'admin', '2018-08-14 13:47:48', 'admin');
+INSERT INTO `fountain_manager_function` VALUES (2, 'FOUNTAIN_MANAGER_FIELD', 'MANAGER_FIELD', '字段', 'pers.nasanir.fountain.common.function.entity.FieldVO', NULL, NULL, b'1', '字段', '2018-08-15 14:21:45', 'admin', '2018-08-15 14:21:45', 'admin');
+INSERT INTO `fountain_manager_function` VALUES (3, 'COMMON_SEQUENCE', 'COMMON_SEQUENCE', '序号生成器', 'pers.nasanir.fountain.common.db.entity.SequenceVO', NULL, NULL, b'1', '序号生成功能', '2018-08-20 22:55:03', 'admin', '2018-08-20 22:55:08', 'admin');

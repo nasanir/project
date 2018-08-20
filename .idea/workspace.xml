@@ -26,15 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CrudDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/impl/CrudDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="44" selection-start-column="8" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mybatis-generator-use/src/main/resources/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,16 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SequenceServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SequenceServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/service/SequenceServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="53" column="78" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
+            <state relative-caret-position="432">
+              <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fountain_manager_function.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/sql/data/fountain_manager_function.sql">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="QueryVO.java" pinned="false" current-in-tab="false">
@@ -465,6 +461,23 @@
               <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
               <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
               <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fountain-common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fountain-common" type="462c0819:PsiDirectoryNode" />
+              <item name="fountain-common-app" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -635,11 +648,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\wk\project\fountain-common\fountain-common-app\src\main\resources\sql\data" />
       <recent name="E:\project\fountain-common\fountain-common-app\src\main\resources" />
       <recent name="E:\project\fountain-common\fountain-common-app\src\main\java\pers\nasanir\fountain\common\function\entity" />
       <recent name="E:\project\fountain-common\fountain-common-app\src\main\resources\mapper" />
       <recent name="F:\wk\project\fountain-common\fountain-common-app\src\main\resources\mapper" />
-      <recent name="F:\wk\project\fountain-common\fountain-common-app\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="pers.nasanir.fountain.common.db.entity" />
@@ -792,16 +805,15 @@
       <workItem from="1534732070314" duration="57000" />
       <workItem from="1534732249950" duration="23000" />
       <workItem from="1534751071820" duration="5641000" />
-      <workItem from="1534773808870" duration="3876000" />
+      <workItem from="1534773808870" duration="4393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150748000" />
+    <option name="totallyTimeSpent" value="151265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="9" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.08645833" side_tool="true" visible="true" weight="0.3273495" />
@@ -820,7 +832,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.9135417" visible="true" weight="0.3273495" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.9135417" weight="0.3273495" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2828125" />
@@ -874,7 +886,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/sql/fountain_manager_field2.sql" />
     <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/shiro/service/BaseRealm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -1187,13 +1198,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/java/pers/nasanir/fountain/common/db/service/SequenceServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="53" column="78" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
+        <state relative-caret-position="432">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fountain-common/fountain-common-app/src/main/resources/sql/data/fountain_manager_function.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
