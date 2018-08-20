@@ -15,8 +15,4 @@ public class StructureController {
     @Autowired
     IStructureService structureService;
 
-    @RequestMapping(value = "/hr/structure/getdata",method = RequestMethod.GET)
-    public List<StructureVO> getData() throws IOException {
-        return structureService.getData();
-    }
 }
