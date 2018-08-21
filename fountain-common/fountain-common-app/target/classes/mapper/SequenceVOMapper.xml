@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="pers.nasanir.fountain.common.db.entity.SequenceVOMapper">
+<mapper namespace="pers.nasanir.fountain.common.db.mapper.SequenceVOMapper">
   <resultMap id="BaseResultMap" type="pers.nasanir.fountain.common.db.entity.SequenceVO">
     <id column="SEQUENCE_ID" jdbcType="BIGINT" property="sequenceId" />
     <result column="SEQUENCE_CODE" jdbcType="VARCHAR" property="sequenceCode" />
@@ -15,11 +15,11 @@
     SEQUENCE_ID, SEQUENCE_CODE, SEQUENCE_NEXT, SEQUENCE_CACHE, CREATE_DT, CREATE_BY, 
     CHANGE_DT, CHANGE_BY
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+  <select id="selectByCode" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from common_sequence
-    where SEQUENCE_ID = #{sequenceId,jdbcType=BIGINT}
+    where SEQUENCE_CODE = #{sequenceCode,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     delete from common_sequence

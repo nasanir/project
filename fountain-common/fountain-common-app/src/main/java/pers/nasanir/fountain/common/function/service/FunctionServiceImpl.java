@@ -12,15 +12,19 @@ import java.util.HashMap;
 import java.util.List;
 @Service("functionService")
 public class FunctionServiceImpl implements IFunctionService {
-    @Autowired
-    IJdbcBaseService jdbcBaseService;
-
-    public VOSet showList(ParamterVO vo){
-        QueryVO queryVO=new QueryVO();
-        queryVO.setFuncCode(vo.getFuncCode());
-        queryVO.setModule(vo.getModule());
-        queryVO.createPageInfo(vo.getLimit(),vo.getPageNo());
-        VOSet resultSet= jdbcBaseService.query(queryVO);
-        return resultSet;
+    @Override
+    public VOSet showList(ParamterVO vo) {
+        return null;
     }
+//    @Autowired
+//    IJdbcBaseService jdbcBaseService;
+//
+//    public VOSet showList(ParamterVO vo){
+//        QueryVO queryVO=new QueryVO();
+//        queryVO.setFuncCode(vo.getFuncCode());
+//        queryVO.setModule(vo.getModule());
+//        queryVO.createPageInfo(vo.getLimit(),vo.getPageNo());
+//        VOSet resultSet= jdbcBaseService.query(queryVO);
+//        return resultSet;
+//    }
 }

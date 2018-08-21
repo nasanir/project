@@ -7,6 +7,24 @@ public class ParamterVO extends BaseVO {
     private String funcCode;
     private int pageNo;
     private int limit;
+    private String action;
+    private String dataBody;
+
+    public String getDataBody() {
+        return dataBody;
+    }
+
+    public void setDataBody(String dataBody) {
+        this.dataBody = dataBody;
+    }
+
+    public String getAction() {
+        return action;
+    }
+
+    public void setAction(String action) {
+        this.action = action;
+    }
 
     public int getLimit() {
         return limit;

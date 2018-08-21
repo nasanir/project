@@ -15,31 +15,31 @@ import java.util.List;
 
 @RestController
 public class FunctionController {
-    @Autowired
-    IFunctionService functionService;
-
-    @RequestMapping(value = "/{module}/{function}/showList",method = RequestMethod.POST)
-    public VOSet showList(HttpServletRequest request, @PathVariable String module, @PathVariable String function, int pageNo, int limit){
-        ParamterVO paramterVO=new ParamterVO();
-        paramterVO.setFuncCode(function);
-        paramterVO.setModule(module);
-        paramterVO.setRequest(request);
-        paramterVO.setPageNo(pageNo);
-        paramterVO.setLimit(limit);
-        return functionService.showList(paramterVO);
-    }
-
-
-    @RequestMapping(value = "/{module}/{function}/add",method = RequestMethod.POST)
-    public VOSet add(HttpServletRequest request, @PathVariable String module, @PathVariable String function, int pageNo, int limit){
-        ParamterVO paramterVO=new ParamterVO();
-        paramterVO.setFuncCode(function);
-        paramterVO.setModule(module);
-        paramterVO.setRequest(request);
-        paramterVO.setPageNo(pageNo);
-        paramterVO.setLimit(limit);
-        return functionService.showList(paramterVO);
-    }
+//FunctionController    @Autowired
+//    IFunctionService functionService;
+//
+//    @RequestMapping(value = "/{module}/{function}/showList",method = RequestMethod.POST)
+//    public VOSet showList(HttpServletRequest request, @PathVariable String module, @PathVariable String function, int pageNo, int limit){
+//        ParamterVO paramterVO=new ParamterVO();
+//        paramterVO.setFuncCode(function);
+//        paramterVO.setModule(module);
+//        paramterVO.setRequest(request);
+//        paramterVO.setPageNo(pageNo);
+//        paramterVO.setLimit(limit);
+//        return functionService.showList(paramterVO);
+//    }
+//
+//
+//    @RequestMapping(value = "/{module}/{function}/add",method = RequestMethod.POST)
+//    public VOSet add(HttpServletRequest request, @PathVariable String module, @PathVariable String function, int pageNo, int limit){
+//        ParamterVO paramterVO=new ParamterVO();
+//        paramterVO.setFuncCode(function);
+//        paramterVO.setModule(module);
+//        paramterVO.setRequest(request);
+//        paramterVO.setPageNo(pageNo);
+//        paramterVO.setLimit(limit);
+//        return functionService.showList(paramterVO);
+//    }
 
 
 

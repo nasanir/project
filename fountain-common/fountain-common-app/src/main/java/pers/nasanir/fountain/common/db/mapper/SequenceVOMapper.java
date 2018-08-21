@@ -1,7 +1,8 @@
-package pers.nasanir.fountain.common.db.entity;
+package pers.nasanir.fountain.common.db.mapper;
 
+import org.apache.ibatis.annotations.Mapper;
 import pers.nasanir.fountain.common.db.entity.SequenceVO;
-
+@Mapper
 public interface SequenceVOMapper {
     int deleteByPrimaryKey(Long sequenceId);
 
@@ -9,7 +10,7 @@ public interface SequenceVOMapper {
 
     int insertSelective(SequenceVO record);
 
-    SequenceVO selectByPrimaryKey(Long sequenceId);
+    SequenceVO selectByCode(String sequenceCode);
 
     int updateByPrimaryKeySelective(SequenceVO record);
 

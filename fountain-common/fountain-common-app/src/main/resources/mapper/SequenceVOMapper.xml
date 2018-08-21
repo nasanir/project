@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.nasanir.fountain.common.db.mapper.SequenceVOMapper">
+  <resultMap id="BaseResultMap" type="pers.nasanir.fountain.common.db.entity.SequenceVO">
+    <id column="SEQUENCE_ID" jdbcType="BIGINT" property="sequenceId" />
+    <result column="SEQUENCE_CODE" jdbcType="VARCHAR" property="sequenceCode" />
+    <result column="SEQUENCE_NEXT" jdbcType="BIGINT" property="sequenceNext" />
+    <result column="SEQUENCE_CACHE" jdbcType="INTEGER" property="sequenceCache" />
+    <result column="CREATE_DT" jdbcType="TIMESTAMP" property="createDt" />
+    <result column="CREATE_BY" jdbcType="VARCHAR" property="createBy" />
+    <result column="CHANGE_DT" jdbcType="TIMESTAMP" property="changeDt" />
+    <result column="CHANGE_BY" jdbcType="VARCHAR" property="changeBy" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    SEQUENCE_ID, SEQUENCE_CODE, SEQUENCE_NEXT, SEQUENCE_CACHE, CREATE_DT, CREATE_BY, 
+    CHANGE_DT, CHANGE_BY
+  </sql>
+  <select id="selectByCode" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from common_sequence
+    where SEQUENCE_CODE = #{sequenceCode,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from common_sequence
+    where SEQUENCE_ID = #{sequenceId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="pers.nasanir.fountain.common.db.entity.SequenceVO">
+    insert into common_sequence (SEQUENCE_ID, SEQUENCE_CODE, SEQUENCE_NEXT, 
+      SEQUENCE_CACHE, CREATE_DT, CREATE_BY, 
+      CHANGE_DT, CHANGE_BY)
+    values (#{sequenceId,jdbcType=BIGINT}, #{sequenceCode,jdbcType=VARCHAR}, #{sequenceNext,jdbcType=BIGINT}, 
+      #{sequenceCache,jdbcType=INTEGER}, #{createDt,jdbcType=TIMESTAMP}, #{createBy,jdbcType=VARCHAR}, 
+      #{changeDt,jdbcType=TIMESTAMP}, #{changeBy,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="pers.nasanir.fountain.common.db.entity.SequenceVO">
+    insert into common_sequence
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="sequenceId != null">
+        SEQUENCE_ID,
+      </if>
+      <if test="sequenceCode != null">
+        SEQUENCE_CODE,
+      </if>
+      <if test="sequenceNext != null">
+        SEQUENCE_NEXT,
+      </if>
+      <if test="sequenceCache != null">
+        SEQUENCE_CACHE,
+      </if>
+      <if test="createDt != null">
+        CREATE_DT,
+      </if>
+      <if test="createBy != null">
+        CREATE_BY,
+      </if>
+      <if test="changeDt != null">
+        CHANGE_DT,
+      </if>
+      <if test="changeBy != null">
+        CHANGE_BY,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="sequenceId != null">
+        #{sequenceId,jdbcType=BIGINT},
+      </if>
+      <if test="sequenceCode != null">
+        #{sequenceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="sequenceNext != null">
+        #{sequenceNext,jdbcType=BIGINT},
+      </if>
+      <if test="sequenceCache != null">
+        #{sequenceCache,jdbcType=INTEGER},
+      </if>
+      <if test="createDt != null">
+        #{createDt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="changeDt != null">
+        #{changeDt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="changeBy != null">
+        #{changeBy,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="pers.nasanir.fountain.common.db.entity.SequenceVO">
+    update common_sequence
+    <set>
+      <if test="sequenceCode != null">
+        SEQUENCE_CODE = #{sequenceCode,jdbcType=VARCHAR},
+      </if>
+      <if test="sequenceNext != null">
+        SEQUENCE_NEXT = #{sequenceNext,jdbcType=BIGINT},
+      </if>
+      <if test="sequenceCache != null">
+        SEQUENCE_CACHE = #{sequenceCache,jdbcType=INTEGER},
+      </if>
+      <if test="createDt != null">
+        CREATE_DT = #{createDt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createBy != null">
+        CREATE_BY = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="changeDt != null">
+        CHANGE_DT = #{changeDt,jdbcType=TIMESTAMP},
+      </if>
+      <if test="changeBy != null">
+        CHANGE_BY = #{changeBy,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where SEQUENCE_ID = #{sequenceId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="pers.nasanir.fountain.common.db.entity.SequenceVO">
+    update common_sequence
+    set SEQUENCE_CODE = #{sequenceCode,jdbcType=VARCHAR},
+      SEQUENCE_NEXT = #{sequenceNext,jdbcType=BIGINT},
+      SEQUENCE_CACHE = #{sequenceCache,jdbcType=INTEGER},
+      CREATE_DT = #{createDt,jdbcType=TIMESTAMP},
+      CREATE_BY = #{createBy,jdbcType=VARCHAR},
+      CHANGE_DT = #{changeDt,jdbcType=TIMESTAMP},
+      CHANGE_BY = #{changeBy,jdbcType=VARCHAR}
+    where SEQUENCE_ID = #{sequenceId,jdbcType=BIGINT}
+  </update>
+</mapper>

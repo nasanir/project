@@ -7,6 +7,7 @@ import pers.nasanir.fountain.common.common.entity.VOSet;
 import pers.nasanir.fountain.common.db.entity.SequenceVO;
 import pers.nasanir.fountain.common.db.impl.IJdbcBaseService;
 import pers.nasanir.fountain.common.db.impl.ISequenceService;
+import pers.nasanir.fountain.common.db.mapper.SequenceVOMapper;
 import pers.nasanir.fountain.common.exception.BaseRunTimeException;
 
 import java.util.HashMap;
@@ -15,16 +16,20 @@ import java.util.HashMap;
 @Service("sequenceService")
 public class SequenceServiceImpl implements ISequenceService {
     @Autowired
-    IJdbcBaseService jdbcBaseService;
+    SequenceVOMapper sequenceVOMapper;
 
     static final String DEFAULT_CODE="COMMON_SEQUENCE";
     static Object LOCK=new Object();
     static HashMap<String,SequenceVO> sequenceCacheMap=new HashMap<>();
 
+    public Long generator(){
+        return generator(DEFAULT_CODE);
+    }
+
     public Long generator(String sequenceCode){
         synchronized (LOCK){
             if(sequenceCode!=null&&sequenceCode.length()>0){
-
+                return getNextId(sequenceCode);
             }else{
                 throw new BaseRunTimeException("sequenceCode is reuqire");
             }
@@ -39,23 +44,22 @@ public class SequenceServiceImpl implements ISequenceService {
             sequenceVO.setCount(sequenceVO.getCount()+1);
             return nextId;
         }else{
-
+            return refreshSequenceCache(sequenceCode);
         }
     }
 
     public Long refreshSequenceCache(String sequenceCode){
-        QueryVO queryVO=new QueryVO();
-        queryVO.setFuncCode(DEFAULT_CODE);
-        queryVO.setWhere(" SEQUENCE_CODE='"+sequenceCode+"'");
-        VOSet<SequenceVO> seqSet=jdbcBaseService.query(queryVO);
-        if(seqSet!=null&&!seqSet.isEmpty()){
-            SequenceVO sequenceVO=seqSet.getVoList().get(0);
+        SequenceVO sequenceVO=sequenceVOMapper.selectByCode(sequenceCode);
+        if(sequenceVO!=null){
             Long nextId=sequenceVO.getSequenceNext();
             sequenceVO.setSequenceNext(nextId+sequenceVO.getSequenceCache()+1L);
-            jdbcBaseService.
-
+            sequenceVOMapper.updateByPrimaryKeySelective(sequenceVO);
+            sequenceVO.setSequenceNext(nextId+1L);
+            sequenceVO.setCount(1);
             sequenceCacheMap.put(sequenceCode,sequenceVO);
-
+            return nextId;
+        }else{
+            throw new BaseRunTimeException("please confige sequence first");
         }
     }
 }

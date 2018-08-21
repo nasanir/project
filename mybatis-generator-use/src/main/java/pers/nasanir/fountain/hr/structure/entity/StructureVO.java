@@ -1,11 +1,9 @@
 package pers.nasanir.fountain.hr.structure.entity;
 
-import pers.nasanir.fountain.common.common.entity.BaseVO;
-
 import java.io.Serializable;
 import java.util.Date;
 
-public class StructureVO extends BaseVO {
+public class StructureVO implements Serializable {
     private Long structureId;
 
     private String structureCode;

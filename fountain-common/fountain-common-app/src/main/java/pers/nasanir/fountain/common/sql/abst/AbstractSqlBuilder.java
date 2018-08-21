@@ -18,6 +18,9 @@ public abstract class AbstractSqlBuilder implements ISqlbuilder {
 	@Override
 	public abstract String getInsertSql(DataVO vo);
 
+	@Override
+	public abstract String getUpdate(DataVO vo);
+
 //	@Override
 //	public abstract List<String> getCreateSql(HashMap<String,ClassInfo> classInfoMap);
 

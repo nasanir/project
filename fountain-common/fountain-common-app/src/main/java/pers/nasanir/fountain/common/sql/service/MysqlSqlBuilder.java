@@ -145,6 +145,11 @@ public class MysqlSqlBuilder extends AbstractSqlBuilder {
         return insertSql.toString();
     }
 
+    @Override
+    public String getUpdate(DataVO vo) {
+        return null;
+    }
+
 
 //    /**
 //     * 创建数据库脚本
