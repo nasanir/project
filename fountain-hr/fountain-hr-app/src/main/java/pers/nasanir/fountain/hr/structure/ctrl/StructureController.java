@@ -20,13 +20,12 @@ public class StructureController {
     IStructureService structureService;
 
     @RequestMapping(value = "/{module}/structure/showList",method = RequestMethod.POST)
-    public ResultVO showList(HttpServletRequest request, @PathVariable String module, @PathVariable String function, int pageNo, int limit){
+    public ResultVO showList(HttpServletRequest request, @PathVariable String module,@RequestBody String requestBody){
         ParamterVO paramterVO=new ParamterVO();
-        paramterVO.setFuncCode(function);
+        paramterVO.setFuncCode("structure");
         paramterVO.setModule(module);
         paramterVO.setRequest(request);
-        paramterVO.setPageNo(pageNo);
-        paramterVO.setLimit(limit);
+        paramterVO.setDataBody(requestBody);
         return structureService.showList(paramterVO);
     }
 
@@ -43,9 +42,9 @@ public class StructureController {
     }
 
     @RequestMapping(value = "/{module}/structure/save",method = RequestMethod.POST)
-    public ResultVO save(HttpServletRequest request, @PathVariable String module, @PathVariable String function, @RequestBody String requestBody, int pageNo, int limit){
+    public ResultVO save(HttpServletRequest request, @PathVariable String module, @RequestBody String requestBody, int pageNo, int limit){
         ParamterVO paramterVO=new ParamterVO();
-        paramterVO.setFuncCode(function);
+        paramterVO.setFuncCode("structure");
         paramterVO.setModule(module);
         paramterVO.setRequest(request);
         paramterVO.setPageNo(pageNo);

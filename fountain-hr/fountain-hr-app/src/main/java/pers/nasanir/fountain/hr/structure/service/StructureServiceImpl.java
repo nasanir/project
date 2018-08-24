@@ -20,6 +20,8 @@ public class StructureServiceImpl implements IStructureService {
     private StructureVOMapper structureVOMapper;
 
     public ResultVO showList(ParamterVO vo){
+        String jsonArrayStr=vo.getDataBody();
+
         int pageNum=vo.getPageNo();
         int pageSize=vo.getLimit();
         Page page = PageHelper.startPage(pageNum, pageSize, true);

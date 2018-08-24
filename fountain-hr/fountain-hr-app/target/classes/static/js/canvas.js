@@ -3,7 +3,7 @@
 	var ctx = canvas.getContext('2d');
 	
 	
-	for(inti=10000;i>0;i--){
+	for(int i=10000;i>0;i--){
 	var radgrad=ctx.createRadialGradient(45,45,12,35,35,30)
 	radgrad.addColorStop(0,'#FF5F98');
 	radgrad.addColorStop(0.75,'#FF0188');
