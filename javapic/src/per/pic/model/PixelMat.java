@@ -5,7 +5,6 @@ import java.awt.image.Raster;
 public class PixelMat {
     private int[] pixelArr;
     private int[][][] pixelMat;
-    private int[][] pixelLayerArr;
 
     private int width;
     private int height;
@@ -35,8 +34,7 @@ public class PixelMat {
             position=(i-layer*width*numBands)/numBands;
             layerArrPosition=i%width*height;
 
-            pixelMat[bandsLayer][layer][position]=pixelArr[i];
-            pixelLayerArr[bandsLayer][layerArrPosition]=pixelArr[i];
+            pixelMat[bandsLayer][layer][position]=i;
         }
     }
 
@@ -49,7 +47,7 @@ public class PixelMat {
         this.pixelMat = pixelMat;
     }
 
-    public int[][] getPixelLayerArr() {
-        return pixelLayerArr;
+    public int[] getPixelArr() {
+        return pixelArr;
     }
 }

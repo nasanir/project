@@ -16,6 +16,7 @@ public class PicHandle {
         int[] formula=operator.getFormula();
         int[][] position=operator.getPosition();
         int[][][] pixelMat=picEntity.getPixelMat().getPixelMat();
+        int[] pixelArr=picEntity.getPixelMat().getPixelArr();
 
         for(int i=0;i<pixelMat.length;i++){
            for(int j=0;j<pixelMat[i].length;j++){
@@ -23,9 +24,9 @@ public class PicHandle {
                     int value=0;
                     for(int t=0;t<position.length;t++){
                         int tempValue=formula[t];
-                        value=value+pixelMat[i][j+position[t][0]][k+position[t][1]]*tempValue;
+                        value=value+pixelArr[pixelMat[i][j+position[t][0]][k+position[t][1]]]*tempValue;
                     }
-                   pixelMat[i][j][k]=value;
+                   pixelArr[pixelMat[i][j][k]]=value;
                }
            }
         }
