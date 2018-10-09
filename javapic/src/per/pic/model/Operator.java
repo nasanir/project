@@ -10,16 +10,9 @@ public class Operator {
     private int width;
     private int height;
 
-    private void fillposition(int width){
-        position=new int[width*width][2];
 
-        for(int i=0;i<width*width;i++){
-            position[i][0]=width-width/2+1+i%width;
-            position[i][1]=width-width/2+1+i/width;
-        }
-    }
 
-    public Operator(int width,int height,int[] dataArr,boolean isConvolution){
+    public Operator(int width,int height,int[] dataArr){
         check(width,height,dataArr);
         this.width=width;
         this.height=height;
@@ -38,7 +31,7 @@ public class Operator {
 
     }
 
-    public Operator(int width,int height,int data,boolean isConvolution){
+    public Operator(int width,int height,int data){
         check(width,height,null);
         this.width=width;
         this.height=height;
@@ -54,6 +47,13 @@ public class Operator {
         }
     }
 
+    private void fillposition(int width){
+        position=new int[width*width][2];
+        for(int i=0;i<width*width;i++){
+            position[i][0]=i%width+1-(width/2+1);
+            position[i][1]=(width/2+1)-(i/width+1);
+        }
+    }
 
 
     private void check(int width,int height,int[] dataArr){
