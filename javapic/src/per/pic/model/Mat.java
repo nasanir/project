@@ -32,12 +32,10 @@ public class Mat {
         int[] newPixelArr = new int[pixelArr.length];
 
         for (int i = 0; i < pixelArr.length; i++) {
-
             int finalValue = 0;
             for (int j = 0; j < positionArr.length; j++) {
                 int nearValue = 0;
                 int position = -1;
-
 
                 if (((i / numBands % width - positionArr[j][0]) >= 0 && (i / numBands % width - positionArr[j][0]) <= width)
                         && ((i / numBands / width + positionArr[j][1]) >= 0 && (i / numBands / width + positionArr[j][1]) <= pixelArr.length / numBands / width)) {
