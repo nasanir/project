@@ -13,23 +13,26 @@ public class Mat {
     private int numBands;
 
     public Mat(Raster raster) {
+        setAttribute(raster.getWidth(),raster.getHeight(),raster.getNumBands());
         pixelArr = new int[width * height * numBands];
         pixelArr = raster.getPixels(0, 0, raster.getWidth(), raster.getHeight(), pixelArr);
-        setAttribute(width, height, numBands);
+        setMatStrAndPixelMat();
     }
 
     public Mat(int width, int height, int numBands, int[] pixelArr) {
+        setAttribute(width, height, numBands);
         this.pixelArr = new int[width * height * numBands];
         for (int i = 0; i < pixelArr.length; i++) {
             this.pixelArr[i] = pixelArr[i];
         }
-        setAttribute(width, height, numBands);
+        setMatStrAndPixelMat();
     }
 
-    public Mat convolution(Operator operator) {
+    public void convolution(Operator operator) {
         int[][] positionArr = operator.getPosition();
         int[] formula = operator.getFormula();
         int[] newPixelArr = new int[pixelArr.length];
+        int coefficient=operator.getCoefficient();
 
         for (int i = 0; i < pixelArr.length; i++) {
             int finalValue = 0;
@@ -47,18 +50,18 @@ public class Mat {
                 }
                 finalValue = finalValue + nearValue;
             }
-            newPixelArr[i] = finalValue;
+            newPixelArr[i] = finalValue/coefficient;
         }
-
-        Mat pixelMat = new Mat(this.width, this.height, this.numBands, newPixelArr);
-        return pixelMat;
+        this.pixelArr=newPixelArr;
     }
 
     private void setAttribute(int width, int height, int numBands) {
         this.width = width;
         this.height = height;
         this.numBands = numBands;
+    }
 
+    private void setMatStrAndPixelMat(){
         pixelMat = new int[numBands][width][height];
         int bandsLayer;
         int layer = -1;
@@ -70,7 +73,7 @@ public class Mat {
             if (i % (numBands * width) == 0) {
                 layer++;
             }
-            position = (i - layer * width * numBands) / numBands;
+            position = (i - layer * width * numBands) % numBands;
 
             pixelMat[bandsLayer][layer][position] = pixelArr[i];
 
@@ -97,6 +100,30 @@ public class Mat {
             map.put(i, bf);
         }
         return map;
+    }
+
+    public int[] getPixelArr() {
+        return pixelArr;
+    }
+
+    public int[][][] getPixelMat() {
+        return pixelMat;
+    }
+
+    public String getMatStr() {
+        return matStr;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public int getNumBands() {
+        return numBands;
     }
 
     public String toString() {

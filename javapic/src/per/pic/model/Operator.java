@@ -10,12 +10,30 @@ public class Operator {
     private int width;
     private int height;
 
+    private int coefficient;
 
 
     public Operator(int width,int height,int[] dataArr){
+        init(1,width,height,dataArr);
+    }
+
+    public Operator(int width,int height,int data){
+        init(1,width,height,data);
+    }
+
+    public Operator(int coefficient,int width,int height,int[] dataArr){
+        init(coefficient,width,height,dataArr);
+    }
+
+    public Operator(int coefficient,int width,int height,int data){
+        init(coefficient,width,height,data);
+    }
+
+    private void init(int coefficient,int width,int height,int[] dataArr){
         check(width,height,dataArr);
         this.width=width;
         this.height=height;
+        this.coefficient=coefficient;
 
         fillposition(width);
 
@@ -28,13 +46,13 @@ public class Operator {
             }
             operator[layer][i%width]=dataArr[i];
         }
-
     }
 
-    public Operator(int width,int height,int data){
+    private void init(int coefficient,int width,int height,int data){
         check(width,height,null);
         this.width=width;
         this.height=height;
+        this.coefficient=coefficient;
 
         fillposition(width);
 
@@ -88,5 +106,9 @@ public class Operator {
 
     public int[][] getPosition() {
         return position;
+    }
+
+    public int getCoefficient() {
+        return coefficient;
     }
 }
