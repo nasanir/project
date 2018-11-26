@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javapic.iml" filepath="$PROJECT_DIR$/javapic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vision/vision.iml" filepath="$PROJECT_DIR$/../vision/vision.iml" />
     </modules>
   </component>
 </project>

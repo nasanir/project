@@ -12,7 +12,7 @@ import java.util.Random;
 public class ResourceUtils {
 
     public static PicEntity randIdCodePic() {
-        int width = 130, height = 40;
+        int width = 65, height = 20;
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
         Graphics g = image.getGraphics();
         Random random = new Random();

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fountain-tools-app" />
+        <module name="nospider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fountain-common" target="1.8" />
+      <module name="fountain-common-app" target="1.8" />
+      <module name="fountain-manager" target="1.5" />
+      <module name="fountain-manager-app" target="1.5" />
+      <module name="fountain-project" target="1.5" />
+      <module name="fountain-project-app" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
