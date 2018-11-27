@@ -3,12 +3,13 @@ package pers.nasanir.fountain.tools.spider.finder;
 import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import org.springframework.stereotype.Component;
 import pers.nasanir.fountain.tools.spider.finder.enumerate.BrowserVersionEnum;
 
 import java.io.IOException;
 
-
-public class SpinderFinder {
+@Component
+public class SpiderFinder {
     public HtmlPage startFind(String target, BrowserVersion browserVersion) throws IOException {
         WebClient webClient=new WebClient(browserVersion);
         webClient.getOptions().setJavaScriptEnabled(true);

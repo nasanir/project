@@ -7,15 +7,24 @@ import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import pers.nasanir.fountain.tools.spider.finder.SpinderFinder;
+import org.springframework.stereotype.Service;
+import pers.nasanir.fountain.tools.spider.finder.SpiderFinder;
 import pers.nasanir.fountain.tools.spider.finder.entity.SpiderVO;
-import pers.nasanir.fountain.tools.spider.finder.itf.FindService;
+import pers.nasanir.fountain.tools.spider.sender.SpiderSender;
+import pers.nasanir.fountain.tools.spider.sender.service.SenderServiceImpl;
 
 import java.util.*;
 import java.util.concurrent.*;
-
+@Service("findService")
 public class FindServiceImpl implements DisposableBean,InitializingBean {
     private static final Logger logger=LoggerFactory.getLogger(FindServiceImpl.class);
+
+    @Autowired
+    private SpiderFinder spiderFinder;
+
+    @Autowired
+    private SenderServiceImpl senderService;
+
     @Autowired
     private RabbitTemplate rabbitTemplate;
     private ExecutorService executor;
@@ -56,18 +65,20 @@ public class FindServiceImpl implements DisposableBean,InitializingBean {
 
     }
 
-    public void findStart(HashMap<String,SpiderVO> spiderVOMap){
+    public void findStart(HashMap<String,SpiderVO> spiderVOMap) throws ExecutionException, InterruptedException {
       for(String uuid:spiderVOMap.keySet()){
           final String target=spiderVOMap.get(uuid).getUrl();
           if(target!=null&&target.length()>0){
               Future<HtmlPage> future=this.executor.submit(new Callable<HtmlPage>() {
                   public HtmlPage call() throws Exception {
-                      return (new SpinderFinder()).startFind(target);
+                      logger.info(target);
+                      return spiderFinder.startFind(target);
                   }
               });
               spiderMap.put(uuid,future);
           }
       }
+      senderService.send2Reader(spiderMap,spiderVOMap);
     }
 
     class SpiderActiveVO{

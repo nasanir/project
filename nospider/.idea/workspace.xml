@@ -60,11 +60,8 @@
       <file leaf-file-name="Spider.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pers/nasanir/funny/nospider/web/Spider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -300,42 +297,9 @@
             </path>
             <path>
               <item name="nospider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="nospider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.sourceforge.htmlunit:htmlunit:2.33" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="nospider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.sourceforge.htmlunit:htmlunit:2.33" type="70bed36:NamedLibraryElementNode" />
-              <item name="htmlunit-2.33.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nospider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.sourceforge.htmlunit:htmlunit:2.33" type="70bed36:NamedLibraryElementNode" />
-              <item name="htmlunit-2.33.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nospider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.sourceforge.htmlunit:htmlunit:2.33" type="70bed36:NamedLibraryElementNode" />
-              <item name="htmlunit-2.33.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="gargoylesoftware" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nospider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: net.sourceforge.htmlunit:htmlunit:2.33" type="70bed36:NamedLibraryElementNode" />
-              <item name="htmlunit-2.33.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="gargoylesoftware" type="462c0819:PsiDirectoryNode" />
-              <item name="htmlunit" type="462c0819:PsiDirectoryNode" />
+              <item name="nospider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -448,15 +412,15 @@
       <workItem from="1542272722633" duration="12737000" />
       <workItem from="1542593504879" duration="1763000" />
       <workItem from="1542853795607" duration="10007000" />
-      <workItem from="1543202884080" duration="6581000" />
+      <workItem from="1543202884080" duration="8014000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41398000" />
+    <option name="totallyTimeSpent" value="42831000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -517,9 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
           <caret line="40" column="5" lean-forward="true" selection-start-line="39" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -567,9 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,11 +784,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/nasanir/funny/nospider/web/Spider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>

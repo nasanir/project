@@ -1,26 +1,28 @@
 package pers.nasanir.fountain.tools.spider.sender.service;
 
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import org.omg.SendingContext.RunTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
-import pers.nasanir.fountain.tools.spider.finder.SpinderFinder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import pers.nasanir.fountain.tools.spider.finder.entity.SpiderVO;
-import pers.nasanir.fountain.tools.spider.finder.itf.FindService;
 import pers.nasanir.fountain.tools.spider.sender.SpiderSender;
 
 import java.util.HashMap;
 import java.util.concurrent.*;
 
+@Service("senderService")
 public class SenderServiceImpl implements InitializingBean,DisposableBean {
 
     private static final Logger logger=LoggerFactory.getLogger(SenderServiceImpl.class);
 
+    @Autowired
+    private SpiderSender spiderSender;
+
     private ExecutorService executor;
-    @Override
+
     public void destroy() throws Exception {
         if(executor!=null){
             executor.shutdown();
@@ -28,11 +30,10 @@ public class SenderServiceImpl implements InitializingBean,DisposableBean {
         }
     }
 
-    @Override
+
     public void afterPropertiesSet() throws Exception {
         if(executor==null){
             executor=new ThreadPoolExecutor(15, 200, 60L, TimeUnit.SECONDS, new SynchronousQueue<Runnable>(), new ThreadFactory() {
-                @Override
                 public Thread newThread(Runnable r) {
                     return new Thread(r,"SpiderSender executor thread"+Thread.currentThread().getId());
                 }
@@ -54,7 +55,7 @@ public class SenderServiceImpl implements InitializingBean,DisposableBean {
         });
     }
 
-    public void Send(final HashMap<String,Future<HtmlPage>> futureMap,final HashMap<String,SpiderVO> spiderVOMap) throws ExecutionException, InterruptedException {
+    public void send2Reader(final HashMap<String,Future<HtmlPage>> futureMap,final HashMap<String,SpiderVO> spiderVOMap) throws ExecutionException, InterruptedException {
         for(final String uuid:futureMap.keySet()){
             Future<String> future=this.executor.submit(new Callable<String>(){
                 public String call() throws Exception {
@@ -63,13 +64,21 @@ public class SenderServiceImpl implements InitializingBean,DisposableBean {
 
                     }
                     SpiderVO spiderVO=spiderVOMap.get(uuid);
-                    spiderVO.setPage(spiderfuture.get().getPage());
-                    SpiderSender spiderSender=new SpiderSender();
-                    spiderSender.send(spiderVO);
+                    spiderVO.setPage(spiderfuture.get().getPage().asXml());
+                    spiderSender.send2Reader(spiderVO);
                     return "success";
                 }
             });
         }
 
+    }
+
+    public void send2Finder(final HashMap<String,SpiderVO> spiderVOMap) throws ExecutionException, InterruptedException {
+        Future<String> future=this.executor.submit(new Callable<String>(){
+            public String call() throws Exception {
+                spiderSender.send2Finder(spiderVOMap);
+                return "success";
+            }
+        });
     }
 }

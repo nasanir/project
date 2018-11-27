@@ -7,13 +7,13 @@ import pers.nasanir.fountain.tools.spider.crypto.factory.CryptoFactory;
 import java.security.NoSuchAlgorithmException;
 
 public class SpiderVO {
-    private String url;
-    private String frontUrl;
+    private String url="";
+    private String frontUrl="";
 
-    private String frontUuid;
-    private String uuid;
+    private String frontUuid="";
+    private String uuid="";
 
-    private HtmlPage page;
+    private String page;
 
     public String getUrl() {
         return url;
@@ -33,6 +33,9 @@ public class SpiderVO {
         this.url = url;
     }
 
+    public void setFrontUrl(String frontUrl) {
+        this.frontUrl = frontUrl;
+    }
     public String getFrontUrl() {
         return frontUrl;
     }
@@ -49,11 +52,15 @@ public class SpiderVO {
         return uuid;
     }
 
-    public HtmlPage getPage() {
+    public String getPage() {
         return page;
     }
 
-    public void setPage(HtmlPage page) {
+    public void setPage(String page) {
         this.page = page;
+    }
+
+    public void setUuid(String uuid) {
+        this.uuid = uuid;
     }
 }
